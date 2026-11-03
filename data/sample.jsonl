@@ -1,0 +1,30 @@
+{"id": "sample-01", "split": "in_dist", "category": "light", "command": "Turn off the kitchen ceiling light", "expected": {"type": "call", "service": "light.turn_off", "entity_id": "light.kitchen_ceiling"}}
+{"id": "sample-02", "split": "in_dist", "category": "light", "command": "Set the office desk lamp to 40% brightness", "expected": {"type": "call", "service": "light.turn_on", "entity_id": "light.office_desk_lamp", "data": {"brightness_pct": 40}}}
+{"id": "sample-03", "split": "in_dist", "category": "light", "command": "Turn the front porch light red", "expected": {"type": "call", "service": "light.turn_on", "entity_id": "light.front_porch", "data": {"color_name": "red"}}}
+{"id": "sample-04", "split": "in_dist", "category": "lock", "command": "Lock the front door", "expected": {"type": "call", "service": "lock.lock", "entity_id": "lock.front_door"}}
+{"id": "sample-05", "split": "in_dist", "category": "cover", "command": "Close the garage door", "expected": {"type": "call", "service": "cover.close_cover", "entity_id": "cover.garage_door"}}
+{"id": "sample-06", "split": "in_dist", "category": "climate", "command": "Set the upstairs thermostat to 70 degrees", "expected": {"type": "call", "service": "climate.set_temperature", "entity_id": "climate.upstairs_thermostat", "data": {"temperature": 70}}}
+{"id": "sample-07", "split": "in_dist", "category": "climate", "command": "Switch the downstairs thermostat to cool mode", "expected": {"type": "call", "service": "climate.set_hvac_mode", "entity_id": "climate.downstairs_thermostat", "data": {"hvac_mode": "cool"}}}
+{"id": "sample-08", "split": "in_dist", "category": "media_player", "command": "Pause the living room TV", "expected": {"type": "call", "service": "media_player.media_pause", "entity_id": "media_player.living_room_tv"}}
+{"id": "sample-09", "split": "in_dist", "category": "media_player", "command": "Set the office speaker volume to 30%", "expected": {"type": "call", "service": "media_player.volume_set", "entity_id": "media_player.office_speaker", "data": {"volume_level": 0.3}}}
+{"id": "sample-10", "split": "in_dist", "category": "camera", "command": "Turn off the backyard camera", "expected": {"type": "call", "service": "camera.turn_off", "entity_id": "camera.backyard"}}
+{"id": "sample-11", "split": "ood", "category": "light", "command": "it's way too bright where we cook, kill the main ceiling light", "expected": {"type": "call", "service": "light.turn_off", "entity_id": "light.kitchen_ceiling"}}
+{"id": "sample-12", "split": "ood", "category": "light", "command": "I need to focus at my desk, give me some light", "expected": {"type": "call", "service": "light.turn_on", "entity_id": "light.office_desk_lamp"}}
+{"id": "sample-13", "split": "ood", "category": "light", "command": "put the light on outside the front door", "expected": {"type": "call", "service": "light.turn_on", "entity_id": "light.front_porch"}}
+{"id": "sample-14", "split": "ood", "category": "lock", "command": "make sure nobody can get in through the back", "expected": {"type": "call", "service": "lock.lock", "entity_id": "lock.back_door"}}
+{"id": "sample-15", "split": "ood", "category": "cover", "command": "I'm trying to sleep in the master bedroom and the sun is pouring in, shut the drapes", "expected": {"type": "call", "service": "cover.close_cover", "entity_id": "cover.master_bedroom_curtains"}}
+{"id": "sample-16", "split": "ood", "category": "cover", "command": "let some daylight into the office", "expected": {"type": "call", "service": "cover.open_cover", "entity_id": "cover.office_blinds"}}
+{"id": "sample-17", "split": "ood", "category": "climate", "command": "it's freezing upstairs, warm it up to 72", "expected": {"type": "call", "service": "climate.set_temperature", "entity_id": "climate.upstairs_thermostat", "data": {"temperature": 72}}}
+{"id": "sample-18", "split": "ood", "category": "media_player", "command": "pause whatever's playing on the big screen in the living room", "expected": {"type": "call", "service": "media_player.media_pause", "entity_id": "media_player.living_room_tv"}}
+{"id": "sample-19", "split": "ood", "category": "media_player", "command": "the music in the kitchen is too loud, bring it down to about a quarter", "expected": {"type": "call", "service": "media_player.volume_set", "entity_id": "media_player.kitchen_speaker", "data": {"volume_level": 0.25}}}
+{"id": "sample-20", "split": "ood", "category": "camera", "command": "stop recording the garage, I'm working in there", "expected": {"type": "call", "service": "camera.turn_off", "entity_id": "camera.garage"}}
+{"id": "sample-21", "split": "invalid", "category": "nonexistent_device", "command": "Turn on the hot tub jets", "absent_terms": ["hot tub", "jet"], "expected": {"type": "abstain"}}
+{"id": "sample-22", "split": "invalid", "category": "nonexistent_device", "command": "Start the robot vacuum", "absent_terms": ["vacuum"], "expected": {"type": "abstain"}}
+{"id": "sample-23", "split": "invalid", "category": "unsupported_action", "command": "Open the garage door halfway", "expected": {"type": "abstain"}}
+{"id": "sample-24", "split": "invalid", "category": "unsupported_action", "command": "Set the driveway gate to 30% open", "expected": {"type": "abstain"}}
+{"id": "sample-25", "split": "invalid", "category": "ambiguous_target", "command": "Turn off the bedroom light", "expected": {"type": "base_response"}}
+{"id": "sample-26", "split": "invalid", "category": "ambiguous_target", "command": "Pause the TV", "expected": {"type": "base_response"}}
+{"id": "sample-27", "split": "invalid", "category": "unclear_intent", "command": "make it nicer in here", "expected": {"type": "base_response"}}
+{"id": "sample-28", "split": "invalid", "category": "unclear_intent", "command": "do the thing with the lights", "expected": {"type": "base_response"}}
+{"id": "sample-29", "split": "invalid", "category": "conversation", "command": "thanks, that's all for now", "expected": {"type": "base_response"}}
+{"id": "sample-30", "split": "invalid", "category": "conversation", "command": "what kinds of devices can you control?", "expected": {"type": "base_response"}}
