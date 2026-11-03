@@ -1,0 +1,475 @@
+{
+ "home_id": "home_40",
+ "seed": 786,
+ "size": 40,
+ "entities": [
+  {
+   "entity_id": "light.kitchen_ceiling",
+   "domain": "light",
+   "name": "Kitchen Ceiling Light",
+   "area": "Kitchen",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.kitchen_island",
+   "domain": "light",
+   "name": "Kitchen Island Pendants",
+   "area": "Kitchen",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.living_room_ceiling",
+   "domain": "light",
+   "name": "Living Room Ceiling Light",
+   "area": "Living Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.living_room_floor_lamp",
+   "domain": "light",
+   "name": "Living Room Floor Lamp",
+   "area": "Living Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.dining_room_chandelier",
+   "domain": "light",
+   "name": "Dining Room Chandelier",
+   "area": "Dining Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.master_bedroom_ceiling",
+   "domain": "light",
+   "name": "Master Bedroom Ceiling Light",
+   "area": "Master Bedroom",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.master_bedroom_nightstand",
+   "domain": "light",
+   "name": "Master Bedroom Nightstand Lamp",
+   "area": "Master Bedroom",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.kids_bedroom_ceiling",
+   "domain": "light",
+   "name": "Kids Bedroom Ceiling Light",
+   "area": "Kids Bedroom",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.office_desk_lamp",
+   "domain": "light",
+   "name": "Office Desk Lamp",
+   "area": "Office",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.bathroom_vanity",
+   "domain": "light",
+   "name": "Bathroom Vanity Light",
+   "area": "Bathroom",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.hallway_ceiling",
+   "domain": "light",
+   "name": "Hallway Ceiling Light",
+   "area": "Hallway",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.stairway",
+   "domain": "light",
+   "name": "Stairway Light",
+   "area": "Hallway",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.laundry_room_ceiling",
+   "domain": "light",
+   "name": "Laundry Room Light",
+   "area": "Laundry Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.garage_ceiling",
+   "domain": "light",
+   "name": "Garage Ceiling Light",
+   "area": "Garage",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.front_porch",
+   "domain": "light",
+   "name": "Front Porch Light",
+   "area": "Front Porch",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.backyard_string_lights",
+   "domain": "light",
+   "name": "Backyard String Lights",
+   "area": "Backyard",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "climate.downstairs_thermostat",
+   "domain": "climate",
+   "name": "Downstairs Thermostat",
+   "area": "Living Room",
+   "services": [
+    "set_temperature",
+    "set_hvac_mode",
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "climate.upstairs_thermostat",
+   "domain": "climate",
+   "name": "Upstairs Thermostat",
+   "area": "Hallway",
+   "services": [
+    "set_temperature",
+    "set_hvac_mode",
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "climate.office_heater",
+   "domain": "climate",
+   "name": "Office Space Heater",
+   "area": "Office",
+   "services": [
+    "set_temperature",
+    "set_hvac_mode",
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "lock.front_door",
+   "domain": "lock",
+   "name": "Front Door Lock",
+   "area": "Front Porch",
+   "services": [
+    "lock",
+    "unlock"
+   ]
+  },
+  {
+   "entity_id": "lock.back_door",
+   "domain": "lock",
+   "name": "Back Door Lock",
+   "area": "Backyard",
+   "services": [
+    "lock",
+    "unlock"
+   ]
+  },
+  {
+   "entity_id": "lock.garage_entry_door",
+   "domain": "lock",
+   "name": "Garage Entry Door Lock",
+   "area": "Garage",
+   "services": [
+    "lock",
+    "unlock"
+   ]
+  },
+  {
+   "entity_id": "camera.front_porch",
+   "domain": "camera",
+   "name": "Front Porch Camera",
+   "area": "Front Porch",
+   "services": [
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "camera.backyard",
+   "domain": "camera",
+   "name": "Backyard Camera",
+   "area": "Backyard",
+   "services": [
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "camera.garage",
+   "domain": "camera",
+   "name": "Garage Camera",
+   "area": "Garage",
+   "services": [
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "media_player.living_room_tv",
+   "domain": "media_player",
+   "name": "Living Room TV",
+   "area": "Living Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "media_player.master_bedroom_tv",
+   "domain": "media_player",
+   "name": "Master Bedroom TV",
+   "area": "Master Bedroom",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "media_player.kitchen_speaker",
+   "domain": "media_player",
+   "name": "Kitchen Speaker",
+   "area": "Kitchen",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "media_player.office_speaker",
+   "domain": "media_player",
+   "name": "Office Speaker",
+   "area": "Office",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "media_player.kids_bedroom_speaker",
+   "domain": "media_player",
+   "name": "Kids Bedroom Speaker",
+   "area": "Kids Bedroom",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "media_player.backyard_speaker",
+   "domain": "media_player",
+   "name": "Backyard Speaker",
+   "area": "Backyard",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "cover.living_room_blinds",
+   "domain": "cover",
+   "name": "Living Room Blinds",
+   "area": "Living Room",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "cover.kitchen_blinds",
+   "domain": "cover",
+   "name": "Kitchen Blinds",
+   "area": "Kitchen",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "cover.dining_room_blinds",
+   "domain": "cover",
+   "name": "Dining Room Blinds",
+   "area": "Dining Room",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "cover.master_bedroom_curtains",
+   "domain": "cover",
+   "name": "Master Bedroom Curtains",
+   "area": "Master Bedroom",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "cover.kids_bedroom_curtains",
+   "domain": "cover",
+   "name": "Kids Bedroom Curtains",
+   "area": "Kids Bedroom",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "cover.office_blinds",
+   "domain": "cover",
+   "name": "Office Blinds",
+   "area": "Office",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "cover.bathroom_blinds",
+   "domain": "cover",
+   "name": "Bathroom Blinds",
+   "area": "Bathroom",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "cover.garage_door",
+   "domain": "cover",
+   "name": "Garage Door",
+   "area": "Garage",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover"
+   ]
+  },
+  {
+   "entity_id": "cover.driveway_gate",
+   "domain": "cover",
+   "name": "Driveway Gate",
+   "area": "Driveway",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover"
+   ]
+  }
+ ]
+}
