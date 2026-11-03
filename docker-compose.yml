@@ -1,0 +1,38 @@
+x-llama-server: &llama-server
+  user: "1000:1000"
+  read_only: true
+  cap_drop: [ALL]
+  security_opt: ["no-new-privileges:true"]
+  pids_limit: 512
+  tmpfs: [/tmp]
+  environment:
+    HOME: /home/ubuntu
+  volumes:
+    - ./models.ini:/models.ini:ro,z
+    - models:/home/ubuntu
+  healthcheck:
+    test: [CMD, curl, -f, http://localhost:8080/health]
+    interval: 5s
+
+services:
+  gpu:
+    <<: *llama-server
+    image: ghcr.io/ggml-org/llama.cpp:server-cuda-b11889
+    ports: ["127.0.0.1:8090:8080"]
+    command: [--models-preset, /models.ini, --models-max, "1", --n-gpu-layers, "99"]
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  cpu:
+    <<: *llama-server
+    image: ghcr.io/ggml-org/llama.cpp:server-b11889
+    ports: ["127.0.0.1:8091:8080"]
+    command: [--models-preset, /models.ini, --models-max, "1"]
+
+volumes:
+  models:
