@@ -1,0 +1,3855 @@
+[
+ {
+  "id": "q-001",
+  "split": "in_dist",
+  "category": "light",
+  "subtype": "direct",
+  "command": "Could you turn off the kitchen ceiling light?",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_off",
+   "entity_id": "light.kitchen_ceiling"
+  }
+ },
+ {
+  "id": "q-002",
+  "split": "in_dist",
+  "category": "light",
+  "subtype": "direct",
+  "command": "Turn on the kitchen island pendants, please.",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.kitchen_island"
+  }
+ },
+ {
+  "id": "q-003",
+  "split": "in_dist",
+  "category": "light",
+  "subtype": "direct",
+  "command": "Set the kitchen island pendants to 50 percent brightness.",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.kitchen_island",
+   "data": {
+    "brightness_pct": 50
+   }
+  }
+ },
+ {
+  "id": "q-004",
+  "split": "in_dist",
+  "category": "light",
+  "subtype": "direct",
+  "command": "Please switch off the living room ceiling light.",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_off",
+   "entity_id": "light.living_room_ceiling"
+  }
+ },
+ {
+  "id": "q-005",
+  "split": "in_dist",
+  "category": "light",
+  "subtype": "direct",
+  "command": "Make the living room floor lamp blue.",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.living_room_floor_lamp",
+   "data": {
+    "color_name": "blue"
+   }
+  }
+ },
+ {
+  "id": "q-006",
+  "split": "in_dist",
+  "category": "light",
+  "subtype": "direct",
+  "command": "Dim the living room floor lamp to 20 percent.",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.living_room_floor_lamp",
+   "data": {
+    "brightness_pct": 20
+   }
+  }
+ },
+ {
+  "id": "q-007",
+  "split": "in_dist",
+  "category": "light",
+  "subtype": "direct",
+  "command": "Turn on the dining room chandelier.",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.dining_room_chandelier"
+  }
+ },
+ {
+  "id": "q-008",
+  "split": "in_dist",
+  "category": "light",
+  "subtype": "direct",
+  "command": "Set the dining room chandelier to 70 percent.",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.dining_room_chandelier",
+   "data": {
+    "brightness_pct": 70
+   }
+  }
+ },
+ {
+  "id": "q-009",
+  "split": "in_dist",
+  "category": "light",
+  "subtype": "direct",
+  "command": "Turn off the master bedroom ceiling light.",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_off",
+   "entity_id": "light.master_bedroom_ceiling"
+  }
+ },
+ {
+  "id": "q-010",
+  "split": "in_dist",
+  "category": "light",
+  "subtype": "direct",
+  "command": "Set the master bedroom nightstand lamp to 10 percent.",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.master_bedroom_nightstand",
+   "data": {
+    "brightness_pct": 10
+   }
+  }
+ },
+ {
+  "id": "q-011",
+  "split": "in_dist",
+  "category": "light",
+  "subtype": "direct",
+  "command": "Change the kids bedroom ceiling light to purple.",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.kids_bedroom_ceiling",
+   "data": {
+    "color_name": "purple"
+   }
+  }
+ },
+ {
+  "id": "q-012",
+  "split": "in_dist",
+  "category": "light",
+  "subtype": "direct",
+  "command": "Turn off the light in the kids bedroom.",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_off",
+   "entity_id": "light.kids_bedroom_ceiling"
+  }
+ },
+ {
+  "id": "q-013",
+  "split": "in_dist",
+  "category": "light",
+  "subtype": "direct",
+  "command": "Turn on the office desk lamp.",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.office_desk_lamp"
+  }
+ },
+ {
+  "id": "q-014",
+  "split": "in_dist",
+  "category": "light",
+  "subtype": "direct",
+  "command": "Set the office desk lamp to 40% brightness.",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.office_desk_lamp",
+   "data": {
+    "brightness_pct": 40
+   }
+  }
+ },
+ {
+  "id": "q-015",
+  "split": "in_dist",
+  "category": "light",
+  "subtype": "direct",
+  "command": "Turn on the bathroom vanity light.",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.bathroom_vanity"
+  }
+ },
+ {
+  "id": "q-016",
+  "split": "in_dist",
+  "category": "light",
+  "subtype": "direct",
+  "command": "Could you turn off the bathroom vanity light?",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_off",
+   "entity_id": "light.bathroom_vanity"
+  }
+ },
+ {
+  "id": "q-017",
+  "split": "in_dist",
+  "category": "light",
+  "subtype": "direct",
+  "command": "Please turn on the stairway light.",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.stairway"
+  }
+ },
+ {
+  "id": "q-018",
+  "split": "in_dist",
+  "category": "light",
+  "subtype": "direct",
+  "command": "Can you toggle the stairway light?",
+  "expected": {
+   "type": "call",
+   "service": "light.toggle",
+   "entity_id": "light.stairway"
+  }
+ },
+ {
+  "id": "q-019",
+  "split": "in_dist",
+  "category": "light",
+  "subtype": "direct",
+  "command": "Turn the front porch light orange.",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.front_porch",
+   "data": {
+    "color_name": "orange"
+   }
+  }
+ },
+ {
+  "id": "q-020",
+  "split": "in_dist",
+  "category": "light",
+  "subtype": "direct",
+  "command": "Turn off the front porch light.",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_off",
+   "entity_id": "light.front_porch"
+  }
+ },
+ {
+  "id": "q-021",
+  "split": "in_dist",
+  "category": "light",
+  "subtype": "direct",
+  "command": "Set the backyard string lights to green.",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.backyard_string_lights",
+   "data": {
+    "color_name": "green"
+   }
+  }
+ },
+ {
+  "id": "q-022",
+  "split": "in_dist",
+  "category": "light",
+  "subtype": "direct",
+  "command": "Brighten the backyard string lights to 60 percent.",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.backyard_string_lights",
+   "data": {
+    "brightness_pct": 60
+   }
+  }
+ },
+ {
+  "id": "q-023",
+  "split": "in_dist",
+  "category": "switch",
+  "subtype": "direct",
+  "command": "Turn on the living room Christmas tree.",
+  "expected": {
+   "type": "call",
+   "service": "switch.turn_on",
+   "entity_id": "switch.living_room_christmas_tree"
+  }
+ },
+ {
+  "id": "q-024",
+  "split": "in_dist",
+  "category": "switch",
+  "subtype": "direct",
+  "command": "Please turn off the Christmas tree in the living room.",
+  "expected": {
+   "type": "call",
+   "service": "switch.turn_off",
+   "entity_id": "switch.living_room_christmas_tree"
+  }
+ },
+ {
+  "id": "q-025",
+  "split": "in_dist",
+  "category": "switch",
+  "subtype": "direct",
+  "command": "Turn on the laundry room dehumidifier.",
+  "expected": {
+   "type": "call",
+   "service": "switch.turn_on",
+   "entity_id": "switch.laundry_room_dehumidifier"
+  }
+ },
+ {
+  "id": "q-026",
+  "split": "in_dist",
+  "category": "switch",
+  "subtype": "direct",
+  "command": "Switch off the dehumidifier in the laundry room.",
+  "expected": {
+   "type": "call",
+   "service": "switch.turn_off",
+   "entity_id": "switch.laundry_room_dehumidifier"
+  }
+ },
+ {
+  "id": "q-027",
+  "split": "in_dist",
+  "category": "switch",
+  "subtype": "direct",
+  "command": "Turn on the office printer.",
+  "expected": {
+   "type": "call",
+   "service": "switch.turn_on",
+   "entity_id": "switch.office_printer"
+  }
+ },
+ {
+  "id": "q-028",
+  "split": "in_dist",
+  "category": "switch",
+  "subtype": "direct",
+  "command": "Turn off the printer in the office.",
+  "expected": {
+   "type": "call",
+   "service": "switch.turn_off",
+   "entity_id": "switch.office_printer"
+  }
+ },
+ {
+  "id": "q-029",
+  "split": "in_dist",
+  "category": "climate",
+  "subtype": "direct",
+  "command": "Set the upstairs thermostat to 70 degrees.",
+  "expected": {
+   "type": "call",
+   "service": "climate.set_temperature",
+   "entity_id": "climate.upstairs_thermostat",
+   "data": {
+    "temperature": 70
+   }
+  }
+ },
+ {
+  "id": "q-030",
+  "split": "in_dist",
+  "category": "climate",
+  "subtype": "direct",
+  "command": "Could you set the downstairs thermostat to 74?",
+  "expected": {
+   "type": "call",
+   "service": "climate.set_temperature",
+   "entity_id": "climate.downstairs_thermostat",
+   "data": {
+    "temperature": 74
+   }
+  }
+ },
+ {
+  "id": "q-031",
+  "split": "in_dist",
+  "category": "climate",
+  "subtype": "direct",
+  "command": "Set the office space heater to 68 degrees.",
+  "expected": {
+   "type": "call",
+   "service": "climate.set_temperature",
+   "entity_id": "climate.office_heater",
+   "data": {
+    "temperature": 68
+   }
+  }
+ },
+ {
+  "id": "q-032",
+  "split": "in_dist",
+  "category": "climate",
+  "subtype": "direct",
+  "command": "Switch the downstairs thermostat to cool mode.",
+  "expected": {
+   "type": "call",
+   "service": "climate.set_hvac_mode",
+   "entity_id": "climate.downstairs_thermostat",
+   "data": {
+    "hvac_mode": "cool"
+   }
+  }
+ },
+ {
+  "id": "q-033",
+  "split": "in_dist",
+  "category": "climate",
+  "subtype": "direct",
+  "command": "Put the upstairs thermostat in heat mode.",
+  "expected": {
+   "type": "call",
+   "service": "climate.set_hvac_mode",
+   "entity_id": "climate.upstairs_thermostat",
+   "data": {
+    "hvac_mode": "heat"
+   }
+  }
+ },
+ {
+  "id": "q-034",
+  "split": "in_dist",
+  "category": "climate",
+  "subtype": "direct",
+  "command": "Set the upstairs thermostat to auto mode.",
+  "expected": {
+   "type": "call",
+   "service": "climate.set_hvac_mode",
+   "entity_id": "climate.upstairs_thermostat",
+   "data": {
+    "hvac_mode": "auto"
+   }
+  }
+ },
+ {
+  "id": "q-035",
+  "split": "in_dist",
+  "category": "climate",
+  "subtype": "direct",
+  "command": "Set the downstairs thermostat to fan only mode.",
+  "expected": {
+   "type": "call",
+   "service": "climate.set_hvac_mode",
+   "entity_id": "climate.downstairs_thermostat",
+   "data": {
+    "hvac_mode": "fan_only"
+   }
+  }
+ },
+ {
+  "id": "q-036",
+  "split": "in_dist",
+  "category": "climate",
+  "subtype": "direct",
+  "command": "Turn off the office space heater.",
+  "expected": {
+   "type": "call",
+   "service": "climate.turn_off",
+   "entity_id": "climate.office_heater"
+  }
+ },
+ {
+  "id": "q-037",
+  "split": "in_dist",
+  "category": "climate",
+  "subtype": "direct",
+  "command": "Please turn on the space heater in the office.",
+  "expected": {
+   "type": "call",
+   "service": "climate.turn_on",
+   "entity_id": "climate.office_heater"
+  }
+ },
+ {
+  "id": "q-038",
+  "split": "in_dist",
+  "category": "climate",
+  "subtype": "direct",
+  "command": "Lower the downstairs thermostat to 68 degrees.",
+  "expected": {
+   "type": "call",
+   "service": "climate.set_temperature",
+   "entity_id": "climate.downstairs_thermostat",
+   "data": {
+    "temperature": 68
+   }
+  }
+ },
+ {
+  "id": "q-039",
+  "split": "in_dist",
+  "category": "climate",
+  "subtype": "direct",
+  "command": "Can you drop the upstairs thermostat to 65?",
+  "expected": {
+   "type": "call",
+   "service": "climate.set_temperature",
+   "entity_id": "climate.upstairs_thermostat",
+   "data": {
+    "temperature": 65
+   }
+  }
+ },
+ {
+  "id": "q-040",
+  "split": "in_dist",
+  "category": "climate",
+  "subtype": "direct",
+  "command": "Turn the office space heater up to 72 degrees.",
+  "expected": {
+   "type": "call",
+   "service": "climate.set_temperature",
+   "entity_id": "climate.office_heater",
+   "data": {
+    "temperature": 72
+   }
+  }
+ },
+ {
+  "id": "q-041",
+  "split": "in_dist",
+  "category": "lock",
+  "subtype": "direct",
+  "command": "Lock the front door, please.",
+  "expected": {
+   "type": "call",
+   "service": "lock.lock",
+   "entity_id": "lock.front_door"
+  }
+ },
+ {
+  "id": "q-042",
+  "split": "in_dist",
+  "category": "lock",
+  "subtype": "direct",
+  "command": "Unlock the front door.",
+  "expected": {
+   "type": "call",
+   "service": "lock.unlock",
+   "entity_id": "lock.front_door"
+  }
+ },
+ {
+  "id": "q-043",
+  "split": "in_dist",
+  "category": "lock",
+  "subtype": "direct",
+  "command": "Can you lock the back door?",
+  "expected": {
+   "type": "call",
+   "service": "lock.lock",
+   "entity_id": "lock.back_door"
+  }
+ },
+ {
+  "id": "q-044",
+  "split": "in_dist",
+  "category": "lock",
+  "subtype": "direct",
+  "command": "Please unlock the back door.",
+  "expected": {
+   "type": "call",
+   "service": "lock.unlock",
+   "entity_id": "lock.back_door"
+  }
+ },
+ {
+  "id": "q-045",
+  "split": "in_dist",
+  "category": "lock",
+  "subtype": "direct",
+  "command": "Lock the garage entry door.",
+  "expected": {
+   "type": "call",
+   "service": "lock.lock",
+   "entity_id": "lock.garage_entry_door"
+  }
+ },
+ {
+  "id": "q-046",
+  "split": "in_dist",
+  "category": "lock",
+  "subtype": "direct",
+  "command": "Unlock the garage entry door, please.",
+  "expected": {
+   "type": "call",
+   "service": "lock.unlock",
+   "entity_id": "lock.garage_entry_door"
+  }
+ },
+ {
+  "id": "q-047",
+  "split": "in_dist",
+  "category": "lock",
+  "subtype": "direct",
+  "command": "Make sure the front door is locked.",
+  "expected": {
+   "type": "call",
+   "service": "lock.lock",
+   "entity_id": "lock.front_door"
+  }
+ },
+ {
+  "id": "q-048",
+  "split": "in_dist",
+  "category": "lock",
+  "subtype": "direct",
+  "command": "Go ahead and unlock the back door.",
+  "expected": {
+   "type": "call",
+   "service": "lock.unlock",
+   "entity_id": "lock.back_door"
+  }
+ },
+ {
+  "id": "q-049",
+  "split": "in_dist",
+  "category": "camera",
+  "subtype": "direct",
+  "command": "Turn off the backyard camera.",
+  "expected": {
+   "type": "call",
+   "service": "camera.turn_off",
+   "entity_id": "camera.backyard"
+  }
+ },
+ {
+  "id": "q-050",
+  "split": "in_dist",
+  "category": "camera",
+  "subtype": "direct",
+  "command": "Turn the backyard camera back on.",
+  "expected": {
+   "type": "call",
+   "service": "camera.turn_on",
+   "entity_id": "camera.backyard"
+  }
+ },
+ {
+  "id": "q-051",
+  "split": "in_dist",
+  "category": "camera",
+  "subtype": "direct",
+  "command": "Please turn off the garage camera.",
+  "expected": {
+   "type": "call",
+   "service": "camera.turn_off",
+   "entity_id": "camera.garage"
+  }
+ },
+ {
+  "id": "q-052",
+  "split": "in_dist",
+  "category": "camera",
+  "subtype": "direct",
+  "command": "Turn on the garage camera.",
+  "expected": {
+   "type": "call",
+   "service": "camera.turn_on",
+   "entity_id": "camera.garage"
+  }
+ },
+ {
+  "id": "q-053",
+  "split": "in_dist",
+  "category": "camera",
+  "subtype": "direct",
+  "command": "Switch on the front porch camera.",
+  "expected": {
+   "type": "call",
+   "service": "camera.turn_on",
+   "entity_id": "camera.front_porch"
+  }
+ },
+ {
+  "id": "q-054",
+  "split": "in_dist",
+  "category": "camera",
+  "subtype": "direct",
+  "command": "Turn off the front porch camera.",
+  "expected": {
+   "type": "call",
+   "service": "camera.turn_off",
+   "entity_id": "camera.front_porch"
+  }
+ },
+ {
+  "id": "q-055",
+  "split": "in_dist",
+  "category": "media_player",
+  "subtype": "direct",
+  "command": "Pause the living room TV.",
+  "expected": {
+   "type": "call",
+   "service": "media_player.media_pause",
+   "entity_id": "media_player.living_room_tv"
+  }
+ },
+ {
+  "id": "q-056",
+  "split": "in_dist",
+  "category": "media_player",
+  "subtype": "direct",
+  "command": "Resume playing on the living room TV.",
+  "expected": {
+   "type": "call",
+   "service": "media_player.media_play",
+   "entity_id": "media_player.living_room_tv"
+  }
+ },
+ {
+  "id": "q-057",
+  "split": "in_dist",
+  "category": "media_player",
+  "subtype": "direct",
+  "command": "Turn off the master bedroom TV.",
+  "expected": {
+   "type": "call",
+   "service": "media_player.turn_off",
+   "entity_id": "media_player.master_bedroom_tv"
+  }
+ },
+ {
+  "id": "q-058",
+  "split": "in_dist",
+  "category": "media_player",
+  "subtype": "direct",
+  "command": "Turn on the TV in the master bedroom.",
+  "expected": {
+   "type": "call",
+   "service": "media_player.turn_on",
+   "entity_id": "media_player.master_bedroom_tv"
+  }
+ },
+ {
+  "id": "q-059",
+  "split": "in_dist",
+  "category": "media_player",
+  "subtype": "direct",
+  "command": "Set the office speaker volume to 30%.",
+  "expected": {
+   "type": "call",
+   "service": "media_player.volume_set",
+   "entity_id": "media_player.office_speaker",
+   "data": {
+    "volume_level": 0.3
+   }
+  }
+ },
+ {
+  "id": "q-060",
+  "split": "in_dist",
+  "category": "media_player",
+  "subtype": "direct",
+  "command": "Set the kitchen speaker volume to 25 percent.",
+  "expected": {
+   "type": "call",
+   "service": "media_player.volume_set",
+   "entity_id": "media_player.kitchen_speaker",
+   "data": {
+    "volume_level": 0.25
+   }
+  }
+ },
+ {
+  "id": "q-061",
+  "split": "in_dist",
+  "category": "media_player",
+  "subtype": "direct",
+  "command": "Skip to the next song on the kitchen speaker.",
+  "expected": {
+   "type": "call",
+   "service": "media_player.media_next_track",
+   "entity_id": "media_player.kitchen_speaker"
+  }
+ },
+ {
+  "id": "q-062",
+  "split": "in_dist",
+  "category": "media_player",
+  "subtype": "direct",
+  "command": "Go back to the previous track on the office speaker.",
+  "expected": {
+   "type": "call",
+   "service": "media_player.media_previous_track",
+   "entity_id": "media_player.office_speaker"
+  }
+ },
+ {
+  "id": "q-063",
+  "split": "in_dist",
+  "category": "media_player",
+  "subtype": "direct",
+  "command": "Go back to the previous episode on the living room TV.",
+  "expected": {
+   "type": "call",
+   "service": "media_player.media_previous_track",
+   "entity_id": "media_player.living_room_tv"
+  }
+ },
+ {
+  "id": "q-064",
+  "split": "in_dist",
+  "category": "media_player",
+  "subtype": "direct",
+  "command": "Play the next song on the backyard speaker.",
+  "expected": {
+   "type": "call",
+   "service": "media_player.media_next_track",
+   "entity_id": "media_player.backyard_speaker"
+  }
+ },
+ {
+  "id": "q-065",
+  "split": "in_dist",
+  "category": "media_player",
+  "subtype": "direct",
+  "command": "Stop the music on the kids bedroom speaker.",
+  "expected": {
+   "type": "call",
+   "service": "media_player.media_stop",
+   "entity_id": "media_player.kids_bedroom_speaker"
+  }
+ },
+ {
+  "id": "q-066",
+  "split": "in_dist",
+  "category": "media_player",
+  "subtype": "direct",
+  "command": "Pause the backyard speaker.",
+  "expected": {
+   "type": "call",
+   "service": "media_player.media_pause",
+   "entity_id": "media_player.backyard_speaker"
+  }
+ },
+ {
+  "id": "q-067",
+  "split": "in_dist",
+  "category": "media_player",
+  "subtype": "direct",
+  "command": "Start playing music on the kitchen speaker.",
+  "expected": {
+   "type": "call",
+   "service": "media_player.media_play",
+   "entity_id": "media_player.kitchen_speaker"
+  }
+ },
+ {
+  "id": "q-068",
+  "split": "in_dist",
+  "category": "media_player",
+  "subtype": "direct",
+  "command": "Mute the living room TV.",
+  "expected": {
+   "type": "call",
+   "service": "media_player.volume_mute",
+   "entity_id": "media_player.living_room_tv",
+   "data": {
+    "is_volume_muted": true
+   }
+  }
+ },
+ {
+  "id": "q-069",
+  "split": "in_dist",
+  "category": "media_player",
+  "subtype": "direct",
+  "command": "Unmute the office speaker.",
+  "expected": {
+   "type": "call",
+   "service": "media_player.volume_mute",
+   "entity_id": "media_player.office_speaker",
+   "data": {
+    "is_volume_muted": false
+   }
+  }
+ },
+ {
+  "id": "q-070",
+  "split": "in_dist",
+  "category": "media_player",
+  "subtype": "direct",
+  "command": "Turn the backyard speaker volume up to 80 percent.",
+  "expected": {
+   "type": "call",
+   "service": "media_player.volume_set",
+   "entity_id": "media_player.backyard_speaker",
+   "data": {
+    "volume_level": 0.8
+   }
+  }
+ },
+ {
+  "id": "q-071",
+  "split": "in_dist",
+  "category": "media_player",
+  "subtype": "direct",
+  "command": "Turn off the kids bedroom speaker.",
+  "expected": {
+   "type": "call",
+   "service": "media_player.turn_off",
+   "entity_id": "media_player.kids_bedroom_speaker"
+  }
+ },
+ {
+  "id": "q-072",
+  "split": "in_dist",
+  "category": "media_player",
+  "subtype": "direct",
+  "command": "Turn on the office speaker.",
+  "expected": {
+   "type": "call",
+   "service": "media_player.turn_on",
+   "entity_id": "media_player.office_speaker"
+  }
+ },
+ {
+  "id": "q-073",
+  "split": "in_dist",
+  "category": "media_player",
+  "subtype": "direct",
+  "command": "Lower the master bedroom TV volume to 15 percent.",
+  "expected": {
+   "type": "call",
+   "service": "media_player.volume_set",
+   "entity_id": "media_player.master_bedroom_tv",
+   "data": {
+    "volume_level": 0.15
+   }
+  }
+ },
+ {
+  "id": "q-074",
+  "split": "in_dist",
+  "category": "media_player",
+  "subtype": "direct",
+  "command": "Skip to the next episode on the living room TV.",
+  "expected": {
+   "type": "call",
+   "service": "media_player.media_next_track",
+   "entity_id": "media_player.living_room_tv"
+  }
+ },
+ {
+  "id": "q-075",
+  "split": "in_dist",
+  "category": "cover",
+  "subtype": "direct",
+  "command": "Open the office blinds.",
+  "expected": {
+   "type": "call",
+   "service": "cover.open_cover",
+   "entity_id": "cover.office_blinds"
+  }
+ },
+ {
+  "id": "q-076",
+  "split": "in_dist",
+  "category": "cover",
+  "subtype": "direct",
+  "command": "Close the master bedroom curtains.",
+  "expected": {
+   "type": "call",
+   "service": "cover.close_cover",
+   "entity_id": "cover.master_bedroom_curtains"
+  }
+ },
+ {
+  "id": "q-077",
+  "split": "in_dist",
+  "category": "cover",
+  "subtype": "direct",
+  "command": "Set the living room blinds to 50 percent.",
+  "expected": {
+   "type": "call",
+   "service": "cover.set_cover_position",
+   "entity_id": "cover.living_room_blinds",
+   "data": {
+    "position": 50
+   }
+  }
+ },
+ {
+  "id": "q-078",
+  "split": "in_dist",
+  "category": "cover",
+  "subtype": "direct",
+  "command": "Close the garage door.",
+  "expected": {
+   "type": "call",
+   "service": "cover.close_cover",
+   "entity_id": "cover.garage_door"
+  }
+ },
+ {
+  "id": "q-079",
+  "split": "in_dist",
+  "category": "cover",
+  "subtype": "direct",
+  "command": "Open the garage door, please.",
+  "expected": {
+   "type": "call",
+   "service": "cover.open_cover",
+   "entity_id": "cover.garage_door"
+  }
+ },
+ {
+  "id": "q-080",
+  "split": "in_dist",
+  "category": "cover",
+  "subtype": "direct",
+  "command": "Open the driveway gate.",
+  "expected": {
+   "type": "call",
+   "service": "cover.open_cover",
+   "entity_id": "cover.driveway_gate"
+  }
+ },
+ {
+  "id": "q-081",
+  "split": "in_dist",
+  "category": "cover",
+  "subtype": "direct",
+  "command": "Close the driveway gate.",
+  "expected": {
+   "type": "call",
+   "service": "cover.close_cover",
+   "entity_id": "cover.driveway_gate"
+  }
+ },
+ {
+  "id": "q-082",
+  "split": "in_dist",
+  "category": "cover",
+  "subtype": "direct",
+  "command": "Stop the garage door!",
+  "expected": {
+   "type": "call",
+   "service": "cover.stop_cover",
+   "entity_id": "cover.garage_door"
+  }
+ },
+ {
+  "id": "q-083",
+  "split": "in_dist",
+  "category": "cover",
+  "subtype": "direct",
+  "command": "Set the kitchen blinds to 30 percent open.",
+  "expected": {
+   "type": "call",
+   "service": "cover.set_cover_position",
+   "entity_id": "cover.kitchen_blinds",
+   "data": {
+    "position": 30
+   }
+  }
+ },
+ {
+  "id": "q-084",
+  "split": "in_dist",
+  "category": "cover",
+  "subtype": "direct",
+  "command": "Open the kids bedroom curtains.",
+  "expected": {
+   "type": "call",
+   "service": "cover.open_cover",
+   "entity_id": "cover.kids_bedroom_curtains"
+  }
+ },
+ {
+  "id": "q-085",
+  "split": "in_dist",
+  "category": "cover",
+  "subtype": "direct",
+  "command": "Close the bathroom blinds.",
+  "expected": {
+   "type": "call",
+   "service": "cover.close_cover",
+   "entity_id": "cover.bathroom_blinds"
+  }
+ },
+ {
+  "id": "q-086",
+  "split": "in_dist",
+  "category": "cover",
+  "subtype": "direct",
+  "command": "Open the dining room blinds to 75 percent.",
+  "expected": {
+   "type": "call",
+   "service": "cover.set_cover_position",
+   "entity_id": "cover.dining_room_blinds",
+   "data": {
+    "position": 75
+   }
+  }
+ },
+ {
+  "id": "q-087",
+  "split": "in_dist",
+  "category": "cover",
+  "subtype": "direct",
+  "command": "Stop the living room blinds.",
+  "expected": {
+   "type": "call",
+   "service": "cover.stop_cover",
+   "entity_id": "cover.living_room_blinds"
+  }
+ },
+ {
+  "id": "q-088",
+  "split": "in_dist",
+  "category": "cover",
+  "subtype": "direct",
+  "command": "Lower the living room blinds.",
+  "expected": {
+   "type": "call",
+   "service": "cover.close_cover",
+   "entity_id": "cover.living_room_blinds"
+  }
+ },
+ {
+  "id": "q-089",
+  "split": "in_dist",
+  "category": "cover",
+  "subtype": "direct",
+  "command": "Open the master bedroom curtains to 20 percent.",
+  "expected": {
+   "type": "call",
+   "service": "cover.set_cover_position",
+   "entity_id": "cover.master_bedroom_curtains",
+   "data": {
+    "position": 20
+   }
+  }
+ },
+ {
+  "id": "q-090",
+  "split": "in_dist",
+  "category": "cover",
+  "subtype": "direct",
+  "command": "Please open the dining room blinds.",
+  "expected": {
+   "type": "call",
+   "service": "cover.open_cover",
+   "entity_id": "cover.dining_room_blinds"
+  }
+ },
+ {
+  "id": "q-091",
+  "split": "ood",
+  "category": "light",
+  "subtype": "indirect",
+  "intent": "q-001",
+  "command": "it's way too bright where we cook, shut off the overhead light",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_off",
+   "entity_id": "light.kitchen_ceiling"
+  }
+ },
+ {
+  "id": "q-092",
+  "split": "ood",
+  "category": "light",
+  "subtype": "colloquial",
+  "intent": "q-001",
+  "command": "kitchen ceiling, off please",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_off",
+   "entity_id": "light.kitchen_ceiling"
+  }
+ },
+ {
+  "id": "q-093",
+  "split": "ood",
+  "category": "light",
+  "subtype": "indirect",
+  "intent": "q-002",
+  "command": "I need some light over the counter where the kids eat breakfast",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.kitchen_island"
+  }
+ },
+ {
+  "id": "q-094",
+  "split": "ood",
+  "category": "light",
+  "subtype": "colloquial",
+  "intent": "q-002",
+  "command": "flip on those pendants over the island in the kitchen",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.kitchen_island"
+  }
+ },
+ {
+  "id": "q-095",
+  "split": "ood",
+  "category": "light",
+  "subtype": "indirect",
+  "intent": "q-003",
+  "command": "the breakfast counter is too bright, set those hanging lights to half",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.kitchen_island",
+   "data": {
+    "brightness_pct": 50
+   }
+  }
+ },
+ {
+  "id": "q-096",
+  "split": "ood",
+  "category": "light",
+  "subtype": "colloquial",
+  "intent": "q-003",
+  "command": "island lights in the kitchen at half, thanks",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.kitchen_island",
+   "data": {
+    "brightness_pct": 50
+   }
+  }
+ },
+ {
+  "id": "q-097",
+  "split": "ood",
+  "category": "light",
+  "subtype": "indirect",
+  "intent": "q-004",
+  "command": "it's too bright in the living room, kill the overhead light",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_off",
+   "entity_id": "light.living_room_ceiling"
+  }
+ },
+ {
+  "id": "q-098",
+  "split": "ood",
+  "category": "light",
+  "subtype": "colloquial",
+  "intent": "q-004",
+  "command": "living room overhead, off",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_off",
+   "entity_id": "light.living_room_ceiling"
+  }
+ },
+ {
+  "id": "q-099",
+  "split": "ood",
+  "category": "light",
+  "subtype": "indirect",
+  "intent": "q-005",
+  "command": "I want a blue glow from the lamp in the living room",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.living_room_floor_lamp",
+   "data": {
+    "color_name": "blue"
+   }
+  }
+ },
+ {
+  "id": "q-100",
+  "split": "ood",
+  "category": "light",
+  "subtype": "colloquial",
+  "intent": "q-005",
+  "command": "living room lamp, blue please",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.living_room_floor_lamp",
+   "data": {
+    "color_name": "blue"
+   }
+  }
+ },
+ {
+  "id": "q-101",
+  "split": "ood",
+  "category": "light",
+  "subtype": "indirect",
+  "intent": "q-006",
+  "command": "movie night in the living room, bring the lamp by the couch down to 20 percent",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.living_room_floor_lamp",
+   "data": {
+    "brightness_pct": 20
+   }
+  }
+ },
+ {
+  "id": "q-102",
+  "split": "ood",
+  "category": "light",
+  "subtype": "colloquial",
+  "intent": "q-006",
+  "command": "drop the lamp in the living room down to 20%",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.living_room_floor_lamp",
+   "data": {
+    "brightness_pct": 20
+   }
+  }
+ },
+ {
+  "id": "q-103",
+  "split": "ood",
+  "category": "light",
+  "subtype": "indirect",
+  "intent": "q-007",
+  "command": "dinner's ready, put the light on over the dining table",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.dining_room_chandelier"
+  }
+ },
+ {
+  "id": "q-104",
+  "split": "ood",
+  "category": "light",
+  "subtype": "colloquial",
+  "intent": "q-007",
+  "command": "chandelier on in the dining room",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.dining_room_chandelier"
+  }
+ },
+ {
+  "id": "q-105",
+  "split": "ood",
+  "category": "light",
+  "subtype": "indirect",
+  "intent": "q-008",
+  "command": "we're eating, bring the light over the dining table to 70 percent",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.dining_room_chandelier",
+   "data": {
+    "brightness_pct": 70
+   }
+  }
+ },
+ {
+  "id": "q-106",
+  "split": "ood",
+  "category": "light",
+  "subtype": "indirect",
+  "intent": "q-009",
+  "command": "I'm getting into bed, turn off the main overhead light in our bedroom",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_off",
+   "entity_id": "light.master_bedroom_ceiling"
+  }
+ },
+ {
+  "id": "q-107",
+  "split": "ood",
+  "category": "light",
+  "subtype": "colloquial",
+  "intent": "q-009",
+  "command": "kill the overhead in the master bedroom",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_off",
+   "entity_id": "light.master_bedroom_ceiling"
+  }
+ },
+ {
+  "id": "q-108",
+  "split": "ood",
+  "category": "light",
+  "subtype": "indirect",
+  "intent": "q-010",
+  "command": "I want to read in bed, put the bedside lamp in our room on at 10 percent",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.master_bedroom_nightstand",
+   "data": {
+    "brightness_pct": 10
+   }
+  }
+ },
+ {
+  "id": "q-109",
+  "split": "ood",
+  "category": "light",
+  "subtype": "colloquial",
+  "intent": "q-010",
+  "command": "nightstand lamp in the master bedroom, ten percent",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.master_bedroom_nightstand",
+   "data": {
+    "brightness_pct": 10
+   }
+  }
+ },
+ {
+  "id": "q-110",
+  "split": "ood",
+  "category": "light",
+  "subtype": "indirect",
+  "intent": "q-011",
+  "command": "my daughter wants her room glowing purple tonight",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.kids_bedroom_ceiling",
+   "data": {
+    "color_name": "purple"
+   }
+  }
+ },
+ {
+  "id": "q-111",
+  "split": "ood",
+  "category": "light",
+  "subtype": "colloquial",
+  "intent": "q-011",
+  "command": "make the kids' room light purple",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.kids_bedroom_ceiling",
+   "data": {
+    "color_name": "purple"
+   }
+  }
+ },
+ {
+  "id": "q-112",
+  "split": "ood",
+  "category": "light",
+  "subtype": "indirect",
+  "intent": "q-012",
+  "command": "the kids are finally asleep, turn their room light off",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_off",
+   "entity_id": "light.kids_bedroom_ceiling"
+  }
+ },
+ {
+  "id": "q-113",
+  "split": "ood",
+  "category": "light",
+  "subtype": "colloquial",
+  "intent": "q-012",
+  "command": "kids' room light off",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_off",
+   "entity_id": "light.kids_bedroom_ceiling"
+  }
+ },
+ {
+  "id": "q-114",
+  "split": "ood",
+  "category": "light",
+  "subtype": "indirect",
+  "intent": "q-013",
+  "command": "I need to focus at my desk, give me some light",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.office_desk_lamp"
+  }
+ },
+ {
+  "id": "q-115",
+  "split": "ood",
+  "category": "light",
+  "subtype": "colloquial",
+  "intent": "q-013",
+  "command": "desk lamp on, please",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.office_desk_lamp"
+  }
+ },
+ {
+  "id": "q-116",
+  "split": "ood",
+  "category": "light",
+  "subtype": "indirect",
+  "intent": "q-014",
+  "command": "the light at my desk is too harsh, set it to 40 percent",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.office_desk_lamp",
+   "data": {
+    "brightness_pct": 40
+   }
+  }
+ },
+ {
+  "id": "q-117",
+  "split": "ood",
+  "category": "light",
+  "subtype": "colloquial",
+  "intent": "q-014",
+  "command": "desk lamp to forty percent",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.office_desk_lamp",
+   "data": {
+    "brightness_pct": 40
+   }
+  }
+ },
+ {
+  "id": "q-118",
+  "split": "ood",
+  "category": "light",
+  "subtype": "indirect",
+  "intent": "q-015",
+  "command": "I can't see myself in the bathroom mirror, light it up",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.bathroom_vanity"
+  }
+ },
+ {
+  "id": "q-119",
+  "split": "ood",
+  "category": "light",
+  "subtype": "colloquial",
+  "intent": "q-015",
+  "command": "vanity light on in the bathroom",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.bathroom_vanity"
+  }
+ },
+ {
+  "id": "q-120",
+  "split": "ood",
+  "category": "light",
+  "subtype": "indirect",
+  "intent": "q-016",
+  "command": "I'm done in front of the bathroom mirror, you can turn that light off",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_off",
+   "entity_id": "light.bathroom_vanity"
+  }
+ },
+ {
+  "id": "q-121",
+  "split": "ood",
+  "category": "light",
+  "subtype": "colloquial",
+  "intent": "q-016",
+  "command": "vanity light off",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_off",
+   "entity_id": "light.bathroom_vanity"
+  }
+ },
+ {
+  "id": "q-122",
+  "split": "ood",
+  "category": "light",
+  "subtype": "indirect",
+  "intent": "q-017",
+  "command": "I can't see the steps, it's pitch black",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.stairway"
+  }
+ },
+ {
+  "id": "q-123",
+  "split": "ood",
+  "category": "light",
+  "subtype": "colloquial",
+  "intent": "q-017",
+  "command": "stairs light on",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.stairway"
+  }
+ },
+ {
+  "id": "q-124",
+  "split": "ood",
+  "category": "light",
+  "subtype": "indirect",
+  "intent": "q-018",
+  "command": "flip the light over the steps",
+  "expected": {
+   "type": "call",
+   "service": "light.toggle",
+   "entity_id": "light.stairway"
+  }
+ },
+ {
+  "id": "q-125",
+  "split": "ood",
+  "category": "light",
+  "subtype": "colloquial",
+  "intent": "q-018",
+  "command": "flip the stairs light",
+  "expected": {
+   "type": "call",
+   "service": "light.toggle",
+   "entity_id": "light.stairway"
+  }
+ },
+ {
+  "id": "q-126",
+  "split": "ood",
+  "category": "light",
+  "subtype": "indirect",
+  "intent": "q-019",
+  "command": "trick-or-treaters are coming, make the light outside the front door orange",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.front_porch",
+   "data": {
+    "color_name": "orange"
+   }
+  }
+ },
+ {
+  "id": "q-127",
+  "split": "ood",
+  "category": "light",
+  "subtype": "colloquial",
+  "intent": "q-019",
+  "command": "porch light, orange",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.front_porch",
+   "data": {
+    "color_name": "orange"
+   }
+  }
+ },
+ {
+  "id": "q-128",
+  "split": "ood",
+  "category": "light",
+  "subtype": "indirect",
+  "intent": "q-020",
+  "command": "everyone's home now, turn off the light outside the front door",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_off",
+   "entity_id": "light.front_porch"
+  }
+ },
+ {
+  "id": "q-129",
+  "split": "ood",
+  "category": "light",
+  "subtype": "colloquial",
+  "intent": "q-020",
+  "command": "porch light off",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_off",
+   "entity_id": "light.front_porch"
+  }
+ },
+ {
+  "id": "q-130",
+  "split": "ood",
+  "category": "light",
+  "subtype": "indirect",
+  "intent": "q-021",
+  "command": "make the lights strung over the yard green for the party",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.backyard_string_lights",
+   "data": {
+    "color_name": "green"
+   }
+  }
+ },
+ {
+  "id": "q-131",
+  "split": "ood",
+  "category": "light",
+  "subtype": "colloquial",
+  "intent": "q-021",
+  "command": "string lights out back, green please",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.backyard_string_lights",
+   "data": {
+    "color_name": "green"
+   }
+  }
+ },
+ {
+  "id": "q-132",
+  "split": "ood",
+  "category": "light",
+  "subtype": "indirect",
+  "intent": "q-022",
+  "command": "the lights strung over the yard are too dim, make them 60 percent",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.backyard_string_lights",
+   "data": {
+    "brightness_pct": 60
+   }
+  }
+ },
+ {
+  "id": "q-133",
+  "split": "ood",
+  "category": "light",
+  "subtype": "colloquial",
+  "intent": "q-022",
+  "command": "string lights out back at sixty percent",
+  "expected": {
+   "type": "call",
+   "service": "light.turn_on",
+   "entity_id": "light.backyard_string_lights",
+   "data": {
+    "brightness_pct": 60
+   }
+  }
+ },
+ {
+  "id": "q-134",
+  "split": "ood",
+  "category": "switch",
+  "subtype": "indirect",
+  "intent": "q-023",
+  "command": "let's get festive, light up the tree",
+  "expected": {
+   "type": "call",
+   "service": "switch.turn_on",
+   "entity_id": "switch.living_room_christmas_tree"
+  }
+ },
+ {
+  "id": "q-135",
+  "split": "ood",
+  "category": "switch",
+  "subtype": "colloquial",
+  "intent": "q-023",
+  "command": "xmas tree on",
+  "expected": {
+   "type": "call",
+   "service": "switch.turn_on",
+   "entity_id": "switch.living_room_christmas_tree"
+  }
+ },
+ {
+  "id": "q-136",
+  "split": "ood",
+  "category": "switch",
+  "subtype": "indirect",
+  "intent": "q-024",
+  "command": "we're going to bed, unplug the tree",
+  "expected": {
+   "type": "call",
+   "service": "switch.turn_off",
+   "entity_id": "switch.living_room_christmas_tree"
+  }
+ },
+ {
+  "id": "q-137",
+  "split": "ood",
+  "category": "switch",
+  "subtype": "colloquial",
+  "intent": "q-024",
+  "command": "tree off",
+  "expected": {
+   "type": "call",
+   "service": "switch.turn_off",
+   "entity_id": "switch.living_room_christmas_tree"
+  }
+ },
+ {
+  "id": "q-138",
+  "split": "ood",
+  "category": "switch",
+  "subtype": "indirect",
+  "intent": "q-025",
+  "command": "it's damp and musty where we do the washing, dry the air out",
+  "expected": {
+   "type": "call",
+   "service": "switch.turn_on",
+   "entity_id": "switch.laundry_room_dehumidifier"
+  }
+ },
+ {
+  "id": "q-139",
+  "split": "ood",
+  "category": "switch",
+  "subtype": "colloquial",
+  "intent": "q-025",
+  "command": "dehumidifier on in the laundry room",
+  "expected": {
+   "type": "call",
+   "service": "switch.turn_on",
+   "entity_id": "switch.laundry_room_dehumidifier"
+  }
+ },
+ {
+  "id": "q-140",
+  "split": "ood",
+  "category": "switch",
+  "subtype": "indirect",
+  "intent": "q-026",
+  "command": "the laundry area is dry enough now, stop drying the air in there",
+  "expected": {
+   "type": "call",
+   "service": "switch.turn_off",
+   "entity_id": "switch.laundry_room_dehumidifier"
+  }
+ },
+ {
+  "id": "q-141",
+  "split": "ood",
+  "category": "switch",
+  "subtype": "colloquial",
+  "intent": "q-026",
+  "command": "dehumidifier off",
+  "expected": {
+   "type": "call",
+   "service": "switch.turn_off",
+   "entity_id": "switch.laundry_room_dehumidifier"
+  }
+ },
+ {
+  "id": "q-142",
+  "split": "ood",
+  "category": "switch",
+  "subtype": "indirect",
+  "intent": "q-027",
+  "command": "I need to print my boarding pass, power up the machine in my office that prints",
+  "expected": {
+   "type": "call",
+   "service": "switch.turn_on",
+   "entity_id": "switch.office_printer"
+  }
+ },
+ {
+  "id": "q-143",
+  "split": "ood",
+  "category": "switch",
+  "subtype": "colloquial",
+  "intent": "q-027",
+  "command": "printer on",
+  "expected": {
+   "type": "call",
+   "service": "switch.turn_on",
+   "entity_id": "switch.office_printer"
+  }
+ },
+ {
+  "id": "q-144",
+  "split": "ood",
+  "category": "switch",
+  "subtype": "indirect",
+  "intent": "q-028",
+  "command": "I'm done printing, power down that machine in my office",
+  "expected": {
+   "type": "call",
+   "service": "switch.turn_off",
+   "entity_id": "switch.office_printer"
+  }
+ },
+ {
+  "id": "q-145",
+  "split": "ood",
+  "category": "switch",
+  "subtype": "colloquial",
+  "intent": "q-028",
+  "command": "printer off, I'm done",
+  "expected": {
+   "type": "call",
+   "service": "switch.turn_off",
+   "entity_id": "switch.office_printer"
+  }
+ },
+ {
+  "id": "q-146",
+  "split": "ood",
+  "category": "climate",
+  "subtype": "indirect",
+  "intent": "q-029",
+  "command": "it's freezing upstairs, bring it up to 70",
+  "expected": {
+   "type": "call",
+   "service": "climate.set_temperature",
+   "entity_id": "climate.upstairs_thermostat",
+   "data": {
+    "temperature": 70
+   }
+  }
+ },
+ {
+  "id": "q-147",
+  "split": "ood",
+  "category": "climate",
+  "subtype": "colloquial",
+  "intent": "q-029",
+  "command": "upstairs heat to seventy",
+  "expected": {
+   "type": "call",
+   "service": "climate.set_temperature",
+   "entity_id": "climate.upstairs_thermostat",
+   "data": {
+    "temperature": 70
+   }
+  }
+ },
+ {
+  "id": "q-148",
+  "split": "ood",
+  "category": "climate",
+  "subtype": "indirect",
+  "intent": "q-030",
+  "command": "it's chilly on the main floor, make it 74 down there",
+  "expected": {
+   "type": "call",
+   "service": "climate.set_temperature",
+   "entity_id": "climate.downstairs_thermostat",
+   "data": {
+    "temperature": 74
+   }
+  }
+ },
+ {
+  "id": "q-149",
+  "split": "ood",
+  "category": "climate",
+  "subtype": "colloquial",
+  "intent": "q-030",
+  "command": "downstairs, 74 degrees",
+  "expected": {
+   "type": "call",
+   "service": "climate.set_temperature",
+   "entity_id": "climate.downstairs_thermostat",
+   "data": {
+    "temperature": 74
+   }
+  }
+ },
+ {
+  "id": "q-150",
+  "split": "ood",
+  "category": "climate",
+  "subtype": "indirect",
+  "intent": "q-031",
+  "command": "my feet are cold while I work, get the heater by my desk to 68",
+  "expected": {
+   "type": "call",
+   "service": "climate.set_temperature",
+   "entity_id": "climate.office_heater",
+   "data": {
+    "temperature": 68
+   }
+  }
+ },
+ {
+  "id": "q-151",
+  "split": "ood",
+  "category": "climate",
+  "subtype": "colloquial",
+  "intent": "q-031",
+  "command": "office heater to 68",
+  "expected": {
+   "type": "call",
+   "service": "climate.set_temperature",
+   "entity_id": "climate.office_heater",
+   "data": {
+    "temperature": 68
+   }
+  }
+ },
+ {
+  "id": "q-152",
+  "split": "ood",
+  "category": "climate",
+  "subtype": "indirect",
+  "intent": "q-032",
+  "command": "it's sweltering on the ground floor, start cooling down there",
+  "expected": {
+   "type": "call",
+   "service": "climate.set_hvac_mode",
+   "entity_id": "climate.downstairs_thermostat",
+   "data": {
+    "hvac_mode": "cool"
+   }
+  }
+ },
+ {
+  "id": "q-153",
+  "split": "ood",
+  "category": "climate",
+  "subtype": "colloquial",
+  "intent": "q-032",
+  "command": "downstairs AC on cool",
+  "expected": {
+   "type": "call",
+   "service": "climate.set_hvac_mode",
+   "entity_id": "climate.downstairs_thermostat",
+   "data": {
+    "hvac_mode": "cool"
+   }
+  }
+ },
+ {
+  "id": "q-154",
+  "split": "ood",
+  "category": "climate",
+  "subtype": "indirect",
+  "intent": "q-033",
+  "command": "the bedrooms upstairs are cold, switch that floor to heating",
+  "expected": {
+   "type": "call",
+   "service": "climate.set_hvac_mode",
+   "entity_id": "climate.upstairs_thermostat",
+   "data": {
+    "hvac_mode": "heat"
+   }
+  }
+ },
+ {
+  "id": "q-155",
+  "split": "ood",
+  "category": "climate",
+  "subtype": "colloquial",
+  "intent": "q-033",
+  "command": "upstairs, heat mode",
+  "expected": {
+   "type": "call",
+   "service": "climate.set_hvac_mode",
+   "entity_id": "climate.upstairs_thermostat",
+   "data": {
+    "hvac_mode": "heat"
+   }
+  }
+ },
+ {
+  "id": "q-156",
+  "split": "ood",
+  "category": "climate",
+  "subtype": "colloquial",
+  "intent": "q-034",
+  "command": "put the upstairs on auto",
+  "expected": {
+   "type": "call",
+   "service": "climate.set_hvac_mode",
+   "entity_id": "climate.upstairs_thermostat",
+   "data": {
+    "hvac_mode": "auto"
+   }
+  }
+ },
+ {
+  "id": "q-157",
+  "split": "ood",
+  "category": "climate",
+  "subtype": "indirect",
+  "intent": "q-035",
+  "command": "just circulate the air downstairs, no heating or cooling",
+  "expected": {
+   "type": "call",
+   "service": "climate.set_hvac_mode",
+   "entity_id": "climate.downstairs_thermostat",
+   "data": {
+    "hvac_mode": "fan_only"
+   }
+  }
+ },
+ {
+  "id": "q-158",
+  "split": "ood",
+  "category": "climate",
+  "subtype": "colloquial",
+  "intent": "q-035",
+  "command": "downstairs on fan only",
+  "expected": {
+   "type": "call",
+   "service": "climate.set_hvac_mode",
+   "entity_id": "climate.downstairs_thermostat",
+   "data": {
+    "hvac_mode": "fan_only"
+   }
+  }
+ },
+ {
+  "id": "q-159",
+  "split": "ood",
+  "category": "climate",
+  "subtype": "indirect",
+  "intent": "q-036",
+  "command": "I'm leaving my office for the day, shut the heater off",
+  "expected": {
+   "type": "call",
+   "service": "climate.turn_off",
+   "entity_id": "climate.office_heater"
+  }
+ },
+ {
+  "id": "q-160",
+  "split": "ood",
+  "category": "climate",
+  "subtype": "colloquial",
+  "intent": "q-036",
+  "command": "kill the heater in the office",
+  "expected": {
+   "type": "call",
+   "service": "climate.turn_off",
+   "entity_id": "climate.office_heater"
+  }
+ },
+ {
+  "id": "q-161",
+  "split": "ood",
+  "category": "climate",
+  "subtype": "indirect",
+  "intent": "q-037",
+  "command": "my office is cold, get the heater going",
+  "expected": {
+   "type": "call",
+   "service": "climate.turn_on",
+   "entity_id": "climate.office_heater"
+  }
+ },
+ {
+  "id": "q-162",
+  "split": "ood",
+  "category": "climate",
+  "subtype": "colloquial",
+  "intent": "q-037",
+  "command": "office heater on",
+  "expected": {
+   "type": "call",
+   "service": "climate.turn_on",
+   "entity_id": "climate.office_heater"
+  }
+ },
+ {
+  "id": "q-163",
+  "split": "ood",
+  "category": "climate",
+  "subtype": "indirect",
+  "intent": "q-038",
+  "command": "it's stuffy on the main floor, take it down to 68",
+  "expected": {
+   "type": "call",
+   "service": "climate.set_temperature",
+   "entity_id": "climate.downstairs_thermostat",
+   "data": {
+    "temperature": 68
+   }
+  }
+ },
+ {
+  "id": "q-164",
+  "split": "ood",
+  "category": "climate",
+  "subtype": "colloquial",
+  "intent": "q-038",
+  "command": "downstairs down to 68",
+  "expected": {
+   "type": "call",
+   "service": "climate.set_temperature",
+   "entity_id": "climate.downstairs_thermostat",
+   "data": {
+    "temperature": 68
+   }
+  }
+ },
+ {
+  "id": "q-165",
+  "split": "ood",
+  "category": "climate",
+  "subtype": "indirect",
+  "intent": "q-039",
+  "command": "we sleep better when it's cool on the bedroom floor upstairs, set it to 65",
+  "expected": {
+   "type": "call",
+   "service": "climate.set_temperature",
+   "entity_id": "climate.upstairs_thermostat",
+   "data": {
+    "temperature": 65
+   }
+  }
+ },
+ {
+  "id": "q-166",
+  "split": "ood",
+  "category": "climate",
+  "subtype": "colloquial",
+  "intent": "q-040",
+  "command": "crank the office heater to 72",
+  "expected": {
+   "type": "call",
+   "service": "climate.set_temperature",
+   "entity_id": "climate.office_heater",
+   "data": {
+    "temperature": 72
+   }
+  }
+ },
+ {
+  "id": "q-167",
+  "split": "ood",
+  "category": "lock",
+  "subtype": "indirect",
+  "intent": "q-041",
+  "command": "I'm heading to bed, make sure the main entrance is locked",
+  "expected": {
+   "type": "call",
+   "service": "lock.lock",
+   "entity_id": "lock.front_door"
+  }
+ },
+ {
+  "id": "q-168",
+  "split": "ood",
+  "category": "lock",
+  "subtype": "colloquial",
+  "intent": "q-041",
+  "command": "front door, lock it",
+  "expected": {
+   "type": "call",
+   "service": "lock.lock",
+   "entity_id": "lock.front_door"
+  }
+ },
+ {
+  "id": "q-169",
+  "split": "ood",
+  "category": "lock",
+  "subtype": "indirect",
+  "intent": "q-042",
+  "command": "my sister just pulled up, let her in at the main entrance",
+  "expected": {
+   "type": "call",
+   "service": "lock.unlock",
+   "entity_id": "lock.front_door"
+  }
+ },
+ {
+  "id": "q-170",
+  "split": "ood",
+  "category": "lock",
+  "subtype": "colloquial",
+  "intent": "q-042",
+  "command": "unlock the front",
+  "expected": {
+   "type": "call",
+   "service": "lock.unlock",
+   "entity_id": "lock.front_door"
+  }
+ },
+ {
+  "id": "q-171",
+  "split": "ood",
+  "category": "lock",
+  "subtype": "indirect",
+  "intent": "q-043",
+  "command": "make sure nobody can get in from the yard side",
+  "expected": {
+   "type": "call",
+   "service": "lock.lock",
+   "entity_id": "lock.back_door"
+  }
+ },
+ {
+  "id": "q-172",
+  "split": "ood",
+  "category": "lock",
+  "subtype": "colloquial",
+  "intent": "q-043",
+  "command": "lock up the back",
+  "expected": {
+   "type": "call",
+   "service": "lock.lock",
+   "entity_id": "lock.back_door"
+  }
+ },
+ {
+  "id": "q-173",
+  "split": "ood",
+  "category": "lock",
+  "subtype": "indirect",
+  "intent": "q-044",
+  "command": "I'm taking the dog out to the yard, unlock that door for me",
+  "expected": {
+   "type": "call",
+   "service": "lock.unlock",
+   "entity_id": "lock.back_door"
+  }
+ },
+ {
+  "id": "q-174",
+  "split": "ood",
+  "category": "lock",
+  "subtype": "colloquial",
+  "intent": "q-044",
+  "command": "back door, open the lock",
+  "expected": {
+   "type": "call",
+   "service": "lock.unlock",
+   "entity_id": "lock.back_door"
+  }
+ },
+ {
+  "id": "q-175",
+  "split": "ood",
+  "category": "lock",
+  "subtype": "indirect",
+  "intent": "q-045",
+  "command": "lock the door between the house and the garage",
+  "expected": {
+   "type": "call",
+   "service": "lock.lock",
+   "entity_id": "lock.garage_entry_door"
+  }
+ },
+ {
+  "id": "q-176",
+  "split": "ood",
+  "category": "lock",
+  "subtype": "colloquial",
+  "intent": "q-045",
+  "command": "garage entry, lock it",
+  "expected": {
+   "type": "call",
+   "service": "lock.lock",
+   "entity_id": "lock.garage_entry_door"
+  }
+ },
+ {
+  "id": "q-177",
+  "split": "ood",
+  "category": "lock",
+  "subtype": "indirect",
+  "intent": "q-046",
+  "command": "I'm carrying groceries in from the car, unlock the door from the garage into the house",
+  "expected": {
+   "type": "call",
+   "service": "lock.unlock",
+   "entity_id": "lock.garage_entry_door"
+  }
+ },
+ {
+  "id": "q-178",
+  "split": "ood",
+  "category": "lock",
+  "subtype": "colloquial",
+  "intent": "q-046",
+  "command": "unlock the garage entry",
+  "expected": {
+   "type": "call",
+   "service": "lock.unlock",
+   "entity_id": "lock.garage_entry_door"
+  }
+ },
+ {
+  "id": "q-179",
+  "split": "ood",
+  "category": "lock",
+  "subtype": "colloquial",
+  "intent": "q-047",
+  "command": "lock the front",
+  "expected": {
+   "type": "call",
+   "service": "lock.lock",
+   "entity_id": "lock.front_door"
+  }
+ },
+ {
+  "id": "q-180",
+  "split": "ood",
+  "category": "lock",
+  "subtype": "colloquial",
+  "intent": "q-048",
+  "command": "back door, unlock",
+  "expected": {
+   "type": "call",
+   "service": "lock.unlock",
+   "entity_id": "lock.back_door"
+  }
+ },
+ {
+  "id": "q-181",
+  "split": "ood",
+  "category": "camera",
+  "subtype": "indirect",
+  "intent": "q-049",
+  "command": "we're having a party out back, stop filming the yard",
+  "expected": {
+   "type": "call",
+   "service": "camera.turn_off",
+   "entity_id": "camera.backyard"
+  }
+ },
+ {
+  "id": "q-182",
+  "split": "ood",
+  "category": "camera",
+  "subtype": "colloquial",
+  "intent": "q-049",
+  "command": "backyard cam off",
+  "expected": {
+   "type": "call",
+   "service": "camera.turn_off",
+   "entity_id": "camera.backyard"
+  }
+ },
+ {
+  "id": "q-183",
+  "split": "ood",
+  "category": "camera",
+  "subtype": "colloquial",
+  "intent": "q-050",
+  "command": "backyard cam on",
+  "expected": {
+   "type": "call",
+   "service": "camera.turn_on",
+   "entity_id": "camera.backyard"
+  }
+ },
+ {
+  "id": "q-184",
+  "split": "ood",
+  "category": "camera",
+  "subtype": "indirect",
+  "intent": "q-051",
+  "command": "stop recording the garage, I'm working in there",
+  "expected": {
+   "type": "call",
+   "service": "camera.turn_off",
+   "entity_id": "camera.garage"
+  }
+ },
+ {
+  "id": "q-185",
+  "split": "ood",
+  "category": "camera",
+  "subtype": "colloquial",
+  "intent": "q-051",
+  "command": "garage cam off",
+  "expected": {
+   "type": "call",
+   "service": "camera.turn_off",
+   "entity_id": "camera.garage"
+  }
+ },
+ {
+  "id": "q-186",
+  "split": "ood",
+  "category": "camera",
+  "subtype": "indirect",
+  "intent": "q-052",
+  "command": "I'm leaving the car in there overnight, start watching the garage",
+  "expected": {
+   "type": "call",
+   "service": "camera.turn_on",
+   "entity_id": "camera.garage"
+  }
+ },
+ {
+  "id": "q-187",
+  "split": "ood",
+  "category": "camera",
+  "subtype": "colloquial",
+  "intent": "q-052",
+  "command": "garage cam on",
+  "expected": {
+   "type": "call",
+   "service": "camera.turn_on",
+   "entity_id": "camera.garage"
+  }
+ },
+ {
+  "id": "q-188",
+  "split": "ood",
+  "category": "camera",
+  "subtype": "indirect",
+  "intent": "q-053",
+  "command": "I'm expecting a package, start watching the front step",
+  "expected": {
+   "type": "call",
+   "service": "camera.turn_on",
+   "entity_id": "camera.front_porch"
+  }
+ },
+ {
+  "id": "q-189",
+  "split": "ood",
+  "category": "camera",
+  "subtype": "colloquial",
+  "intent": "q-053",
+  "command": "porch cam on",
+  "expected": {
+   "type": "call",
+   "service": "camera.turn_on",
+   "entity_id": "camera.front_porch"
+  }
+ },
+ {
+  "id": "q-190",
+  "split": "ood",
+  "category": "camera",
+  "subtype": "colloquial",
+  "intent": "q-054",
+  "command": "porch cam off",
+  "expected": {
+   "type": "call",
+   "service": "camera.turn_off",
+   "entity_id": "camera.front_porch"
+  }
+ },
+ {
+  "id": "q-191",
+  "split": "ood",
+  "category": "media_player",
+  "subtype": "indirect",
+  "intent": "q-055",
+  "command": "pause whatever's on the big screen in the living room",
+  "expected": {
+   "type": "call",
+   "service": "media_player.media_pause",
+   "entity_id": "media_player.living_room_tv"
+  }
+ },
+ {
+  "id": "q-192",
+  "split": "ood",
+  "category": "media_player",
+  "subtype": "colloquial",
+  "intent": "q-055",
+  "command": "hold up, pause the telly in the living room",
+  "expected": {
+   "type": "call",
+   "service": "media_player.media_pause",
+   "entity_id": "media_player.living_room_tv"
+  }
+ },
+ {
+  "id": "q-193",
+  "split": "ood",
+  "category": "media_player",
+  "subtype": "colloquial",
+  "intent": "q-056",
+  "command": "hit play on the TV in the living room",
+  "expected": {
+   "type": "call",
+   "service": "media_player.media_play",
+   "entity_id": "media_player.living_room_tv"
+  }
+ },
+ {
+  "id": "q-194",
+  "split": "ood",
+  "category": "media_player",
+  "subtype": "indirect",
+  "intent": "q-057",
+  "command": "I fell asleep with the TV on in our bedroom, shut it off",
+  "expected": {
+   "type": "call",
+   "service": "media_player.turn_off",
+   "entity_id": "media_player.master_bedroom_tv"
+  }
+ },
+ {
+  "id": "q-195",
+  "split": "ood",
+  "category": "media_player",
+  "subtype": "colloquial",
+  "intent": "q-057",
+  "command": "master bedroom telly off",
+  "expected": {
+   "type": "call",
+   "service": "media_player.turn_off",
+   "entity_id": "media_player.master_bedroom_tv"
+  }
+ },
+ {
+  "id": "q-196",
+  "split": "ood",
+  "category": "media_player",
+  "subtype": "colloquial",
+  "intent": "q-058",
+  "command": "TV on in the master bedroom",
+  "expected": {
+   "type": "call",
+   "service": "media_player.turn_on",
+   "entity_id": "media_player.master_bedroom_tv"
+  }
+ },
+ {
+  "id": "q-197",
+  "split": "ood",
+  "category": "media_player",
+  "subtype": "indirect",
+  "intent": "q-059",
+  "command": "the music at my desk is too quiet, set it to 30 percent",
+  "expected": {
+   "type": "call",
+   "service": "media_player.volume_set",
+   "entity_id": "media_player.office_speaker",
+   "data": {
+    "volume_level": 0.3
+   }
+  }
+ },
+ {
+  "id": "q-198",
+  "split": "ood",
+  "category": "media_player",
+  "subtype": "colloquial",
+  "intent": "q-059",
+  "command": "music in the office at thirty percent",
+  "expected": {
+   "type": "call",
+   "service": "media_player.volume_set",
+   "entity_id": "media_player.office_speaker",
+   "data": {
+    "volume_level": 0.3
+   }
+  }
+ },
+ {
+  "id": "q-199",
+  "split": "ood",
+  "category": "media_player",
+  "subtype": "indirect",
+  "intent": "q-060",
+  "command": "the music in the kitchen is too loud, bring it down to a quarter",
+  "expected": {
+   "type": "call",
+   "service": "media_player.volume_set",
+   "entity_id": "media_player.kitchen_speaker",
+   "data": {
+    "volume_level": 0.25
+   }
+  }
+ },
+ {
+  "id": "q-200",
+  "split": "ood",
+  "category": "media_player",
+  "subtype": "colloquial",
+  "intent": "q-060",
+  "command": "kitchen music to a quarter volume",
+  "expected": {
+   "type": "call",
+   "service": "media_player.volume_set",
+   "entity_id": "media_player.kitchen_speaker",
+   "data": {
+    "volume_level": 0.25
+   }
+  }
+ },
+ {
+  "id": "q-201",
+  "split": "ood",
+  "category": "media_player",
+  "subtype": "indirect",
+  "intent": "q-061",
+  "command": "I hate the song playing while I cook, skip it",
+  "expected": {
+   "type": "call",
+   "service": "media_player.media_next_track",
+   "entity_id": "media_player.kitchen_speaker"
+  }
+ },
+ {
+  "id": "q-202",
+  "split": "ood",
+  "category": "media_player",
+  "subtype": "colloquial",
+  "intent": "q-061",
+  "command": "next track in the kitchen",
+  "expected": {
+   "type": "call",
+   "service": "media_player.media_next_track",
+   "entity_id": "media_player.kitchen_speaker"
+  }
+ },
+ {
+  "id": "q-203",
+  "split": "ood",
+  "category": "media_player",
+  "subtype": "indirect",
+  "intent": "q-062",
+  "command": "I missed the last song playing in my office, go back to it",
+  "expected": {
+   "type": "call",
+   "service": "media_player.media_previous_track",
+   "entity_id": "media_player.office_speaker"
+  }
+ },
+ {
+  "id": "q-204",
+  "split": "ood",
+  "category": "media_player",
+  "subtype": "colloquial",
+  "intent": "q-062",
+  "command": "back one song in the office",
+  "expected": {
+   "type": "call",
+   "service": "media_player.media_previous_track",
+   "entity_id": "media_player.office_speaker"
+  }
+ },
+ {
+  "id": "q-205",
+  "split": "ood",
+  "category": "media_player",
+  "subtype": "colloquial",
+  "intent": "q-063",
+  "command": "living room telly, previous one",
+  "expected": {
+   "type": "call",
+   "service": "media_player.media_previous_track",
+   "entity_id": "media_player.living_room_tv"
+  }
+ },
+ {
+  "id": "q-206",
+  "split": "ood",
+  "category": "media_player",
+  "subtype": "indirect",
+  "intent": "q-064",
+  "command": "skip this song out by the patio",
+  "expected": {
+   "type": "call",
+   "service": "media_player.media_next_track",
+   "entity_id": "media_player.backyard_speaker"
+  }
+ },
+ {
+  "id": "q-207",
+  "split": "ood",
+  "category": "media_player",
+  "subtype": "colloquial",
+  "intent": "q-064",
+  "command": "skip the song out back",
+  "expected": {
+   "type": "call",
+   "service": "media_player.media_next_track",
+   "entity_id": "media_player.backyard_speaker"
+  }
+ },
+ {
+  "id": "q-208",
+  "split": "ood",
+  "category": "media_player",
+  "subtype": "indirect",
+  "intent": "q-065",
+  "command": "it's bedtime, stop the music in the kids' room",
+  "expected": {
+   "type": "call",
+   "service": "media_player.media_stop",
+   "entity_id": "media_player.kids_bedroom_speaker"
+  }
+ },
+ {
+  "id": "q-209",
+  "split": "ood",
+  "category": "media_player",
+  "subtype": "colloquial",
+  "intent": "q-065",
+  "command": "kids room speaker, stop",
+  "expected": {
+   "type": "call",
+   "service": "media_player.media_stop",
+   "entity_id": "media_player.kids_bedroom_speaker"
+  }
+ },
+ {
+  "id": "q-210",
+  "split": "ood",
+  "category": "media_player",
+  "subtype": "indirect",
+  "intent": "q-066",
+  "command": "the neighbors are complaining, pause the music in the yard",
+  "expected": {
+   "type": "call",
+   "service": "media_player.media_pause",
+   "entity_id": "media_player.backyard_speaker"
+  }
+ },
+ {
+  "id": "q-211",
+  "split": "ood",
+  "category": "media_player",
+  "subtype": "colloquial",
+  "intent": "q-067",
+  "command": "play something in the kitchen",
+  "expected": {
+   "type": "call",
+   "service": "media_player.media_play",
+   "entity_id": "media_player.kitchen_speaker"
+  }
+ },
+ {
+  "id": "q-212",
+  "split": "ood",
+  "category": "media_player",
+  "subtype": "indirect",
+  "intent": "q-068",
+  "command": "the phone's ringing, silence the TV in the living room",
+  "expected": {
+   "type": "call",
+   "service": "media_player.volume_mute",
+   "entity_id": "media_player.living_room_tv",
+   "data": {
+    "is_volume_muted": true
+   }
+  }
+ },
+ {
+  "id": "q-213",
+  "split": "ood",
+  "category": "media_player",
+  "subtype": "colloquial",
+  "intent": "q-068",
+  "command": "shh, mute the telly in the living room",
+  "expected": {
+   "type": "call",
+   "service": "media_player.volume_mute",
+   "entity_id": "media_player.living_room_tv",
+   "data": {
+    "is_volume_muted": true
+   }
+  }
+ },
+ {
+  "id": "q-214",
+  "split": "ood",
+  "category": "media_player",
+  "subtype": "colloquial",
+  "intent": "q-069",
+  "command": "unmute the music in the office",
+  "expected": {
+   "type": "call",
+   "service": "media_player.volume_mute",
+   "entity_id": "media_player.office_speaker",
+   "data": {
+    "is_volume_muted": false
+   }
+  }
+ },
+ {
+  "id": "q-215",
+  "split": "ood",
+  "category": "media_player",
+  "subtype": "indirect",
+  "intent": "q-070",
+  "command": "the party's starting, crank the music in the yard to 80 percent",
+  "expected": {
+   "type": "call",
+   "service": "media_player.volume_set",
+   "entity_id": "media_player.backyard_speaker",
+   "data": {
+    "volume_level": 0.8
+   }
+  }
+ },
+ {
+  "id": "q-216",
+  "split": "ood",
+  "category": "media_player",
+  "subtype": "indirect",
+  "intent": "q-071",
+  "command": "the kids are asleep, switch off the speaker in their room",
+  "expected": {
+   "type": "call",
+   "service": "media_player.turn_off",
+   "entity_id": "media_player.kids_bedroom_speaker"
+  }
+ },
+ {
+  "id": "q-217",
+  "split": "ood",
+  "category": "media_player",
+  "subtype": "colloquial",
+  "intent": "q-072",
+  "command": "speaker in the office on",
+  "expected": {
+   "type": "call",
+   "service": "media_player.turn_on",
+   "entity_id": "media_player.office_speaker"
+  }
+ },
+ {
+  "id": "q-218",
+  "split": "ood",
+  "category": "media_player",
+  "subtype": "indirect",
+  "intent": "q-073",
+  "command": "my partner is asleep, bring the TV in our room down to 15 percent",
+  "expected": {
+   "type": "call",
+   "service": "media_player.volume_set",
+   "entity_id": "media_player.master_bedroom_tv",
+   "data": {
+    "volume_level": 0.15
+   }
+  }
+ },
+ {
+  "id": "q-219",
+  "split": "ood",
+  "category": "media_player",
+  "subtype": "colloquial",
+  "intent": "q-074",
+  "command": "next episode on the TV in the living room",
+  "expected": {
+   "type": "call",
+   "service": "media_player.media_next_track",
+   "entity_id": "media_player.living_room_tv"
+  }
+ },
+ {
+  "id": "q-220",
+  "split": "ood",
+  "category": "cover",
+  "subtype": "indirect",
+  "intent": "q-075",
+  "command": "let some daylight into the office",
+  "expected": {
+   "type": "call",
+   "service": "cover.open_cover",
+   "entity_id": "cover.office_blinds"
+  }
+ },
+ {
+  "id": "q-221",
+  "split": "ood",
+  "category": "cover",
+  "subtype": "colloquial",
+  "intent": "q-075",
+  "command": "blinds in the office, open 'em",
+  "expected": {
+   "type": "call",
+   "service": "cover.open_cover",
+   "entity_id": "cover.office_blinds"
+  }
+ },
+ {
+  "id": "q-222",
+  "split": "ood",
+  "category": "cover",
+  "subtype": "indirect",
+  "intent": "q-076",
+  "command": "I'm trying to sleep in and the sun is pouring into our bedroom, shut the drapes",
+  "expected": {
+   "type": "call",
+   "service": "cover.close_cover",
+   "entity_id": "cover.master_bedroom_curtains"
+  }
+ },
+ {
+  "id": "q-223",
+  "split": "ood",
+  "category": "cover",
+  "subtype": "colloquial",
+  "intent": "q-076",
+  "command": "drapes in the master bedroom, closed",
+  "expected": {
+   "type": "call",
+   "service": "cover.close_cover",
+   "entity_id": "cover.master_bedroom_curtains"
+  }
+ },
+ {
+  "id": "q-224",
+  "split": "ood",
+  "category": "cover",
+  "subtype": "colloquial",
+  "intent": "q-077",
+  "command": "put the blinds in the living room halfway",
+  "expected": {
+   "type": "call",
+   "service": "cover.set_cover_position",
+   "entity_id": "cover.living_room_blinds",
+   "data": {
+    "position": 50
+   }
+  }
+ },
+ {
+  "id": "q-225",
+  "split": "ood",
+  "category": "cover",
+  "subtype": "indirect",
+  "intent": "q-078",
+  "command": "I left the big door where the car goes wide open, close it",
+  "expected": {
+   "type": "call",
+   "service": "cover.close_cover",
+   "entity_id": "cover.garage_door"
+  }
+ },
+ {
+  "id": "q-226",
+  "split": "ood",
+  "category": "cover",
+  "subtype": "colloquial",
+  "intent": "q-078",
+  "command": "shut the garage",
+  "expected": {
+   "type": "call",
+   "service": "cover.close_cover",
+   "entity_id": "cover.garage_door"
+  }
+ },
+ {
+  "id": "q-227",
+  "split": "ood",
+  "category": "cover",
+  "subtype": "indirect",
+  "intent": "q-079",
+  "command": "I'm pulling in, open up where I park the car",
+  "expected": {
+   "type": "call",
+   "service": "cover.open_cover",
+   "entity_id": "cover.garage_door"
+  }
+ },
+ {
+  "id": "q-228",
+  "split": "ood",
+  "category": "cover",
+  "subtype": "indirect",
+  "intent": "q-080",
+  "command": "the delivery truck is here, let it through at the end of the driveway",
+  "expected": {
+   "type": "call",
+   "service": "cover.open_cover",
+   "entity_id": "cover.driveway_gate"
+  }
+ },
+ {
+  "id": "q-229",
+  "split": "ood",
+  "category": "cover",
+  "subtype": "colloquial",
+  "intent": "q-080",
+  "command": "gate, open up",
+  "expected": {
+   "type": "call",
+   "service": "cover.open_cover",
+   "entity_id": "cover.driveway_gate"
+  }
+ },
+ {
+  "id": "q-230",
+  "split": "ood",
+  "category": "cover",
+  "subtype": "colloquial",
+  "intent": "q-081",
+  "command": "shut the gate",
+  "expected": {
+   "type": "call",
+   "service": "cover.close_cover",
+   "entity_id": "cover.driveway_gate"
+  }
+ },
+ {
+  "id": "q-231",
+  "split": "ood",
+  "category": "cover",
+  "subtype": "indirect",
+  "intent": "q-082",
+  "command": "the dog is in the way, stop the big door where the car goes",
+  "expected": {
+   "type": "call",
+   "service": "cover.stop_cover",
+   "entity_id": "cover.garage_door"
+  }
+ },
+ {
+  "id": "q-232",
+  "split": "ood",
+  "category": "cover",
+  "subtype": "colloquial",
+  "intent": "q-083",
+  "command": "blinds in the kitchen to thirty percent",
+  "expected": {
+   "type": "call",
+   "service": "cover.set_cover_position",
+   "entity_id": "cover.kitchen_blinds",
+   "data": {
+    "position": 30
+   }
+  }
+ },
+ {
+  "id": "q-233",
+  "split": "ood",
+  "category": "cover",
+  "subtype": "indirect",
+  "intent": "q-084",
+  "command": "time to wake the kids, let the sun into their room",
+  "expected": {
+   "type": "call",
+   "service": "cover.open_cover",
+   "entity_id": "cover.kids_bedroom_curtains"
+  }
+ },
+ {
+  "id": "q-234",
+  "split": "ood",
+  "category": "cover",
+  "subtype": "indirect",
+  "intent": "q-085",
+  "command": "I'm about to shower, give me some privacy in the bathroom",
+  "expected": {
+   "type": "call",
+   "service": "cover.close_cover",
+   "entity_id": "cover.bathroom_blinds"
+  }
+ },
+ {
+  "id": "q-235",
+  "split": "ood",
+  "category": "cover",
+  "subtype": "colloquial",
+  "intent": "q-085",
+  "command": "blinds in the bathroom, down",
+  "expected": {
+   "type": "call",
+   "service": "cover.close_cover",
+   "entity_id": "cover.bathroom_blinds"
+  }
+ },
+ {
+  "id": "q-236",
+  "split": "ood",
+  "category": "cover",
+  "subtype": "indirect",
+  "intent": "q-086",
+  "command": "let more light onto the dining table, three quarters open",
+  "expected": {
+   "type": "call",
+   "service": "cover.set_cover_position",
+   "entity_id": "cover.dining_room_blinds",
+   "data": {
+    "position": 75
+   }
+  }
+ },
+ {
+  "id": "q-237",
+  "split": "ood",
+  "category": "cover",
+  "subtype": "colloquial",
+  "intent": "q-087",
+  "command": "blinds in the living room, stop",
+  "expected": {
+   "type": "call",
+   "service": "cover.stop_cover",
+   "entity_id": "cover.living_room_blinds"
+  }
+ },
+ {
+  "id": "q-238",
+  "split": "ood",
+  "category": "cover",
+  "subtype": "indirect",
+  "intent": "q-088",
+  "command": "there's glare on the TV in the living room, shut the blinds",
+  "expected": {
+   "type": "call",
+   "service": "cover.close_cover",
+   "entity_id": "cover.living_room_blinds"
+  }
+ },
+ {
+  "id": "q-239",
+  "split": "ood",
+  "category": "cover",
+  "subtype": "indirect",
+  "intent": "q-089",
+  "command": "let just a little morning light into our bedroom, open the drapes 20 percent",
+  "expected": {
+   "type": "call",
+   "service": "cover.set_cover_position",
+   "entity_id": "cover.master_bedroom_curtains",
+   "data": {
+    "position": 20
+   }
+  }
+ },
+ {
+  "id": "q-240",
+  "split": "ood",
+  "category": "cover",
+  "subtype": "colloquial",
+  "intent": "q-090",
+  "command": "blinds in the dining room, all the way up",
+  "expected": {
+   "type": "call",
+   "service": "cover.open_cover",
+   "entity_id": "cover.dining_room_blinds"
+  }
+ },
+ {
+  "id": "q-241",
+  "split": "invalid",
+  "category": "nonexistent_device",
+  "command": "Start the robot vacuum.",
+  "expected": {
+   "type": "abstain"
+  },
+  "absent_terms": [
+   "vacuum"
+  ]
+ },
+ {
+  "id": "q-242",
+  "split": "invalid",
+  "category": "nonexistent_device",
+  "command": "Turn on the hot tub jets.",
+  "expected": {
+   "type": "abstain"
+  },
+  "absent_terms": [
+   "hot tub"
+  ]
+ },
+ {
+  "id": "q-243",
+  "split": "invalid",
+  "category": "nonexistent_device",
+  "command": "Run the sprinklers for ten minutes.",
+  "expected": {
+   "type": "abstain"
+  },
+  "absent_terms": [
+   "sprinkler"
+  ]
+ },
+ {
+  "id": "q-244",
+  "split": "invalid",
+  "category": "nonexistent_device",
+  "command": "Start the coffee maker.",
+  "expected": {
+   "type": "abstain"
+  },
+  "absent_terms": [
+   "coffee"
+  ]
+ },
+ {
+  "id": "q-245",
+  "split": "invalid",
+  "category": "nonexistent_device",
+  "command": "Turn on the ceiling fan in the living room.",
+  "expected": {
+   "type": "abstain"
+  },
+  "absent_terms": [
+   "fan"
+  ]
+ },
+ {
+  "id": "q-246",
+  "split": "invalid",
+  "category": "nonexistent_device",
+  "command": "Light the fireplace.",
+  "expected": {
+   "type": "abstain"
+  },
+  "absent_terms": [
+   "fireplace"
+  ]
+ },
+ {
+  "id": "q-247",
+  "split": "invalid",
+  "category": "nonexistent_device",
+  "command": "Start the dishwasher.",
+  "expected": {
+   "type": "abstain"
+  },
+  "absent_terms": [
+   "dishwasher"
+  ]
+ },
+ {
+  "id": "q-248",
+  "split": "invalid",
+  "category": "nonexistent_device",
+  "command": "Preheat the oven to 400.",
+  "expected": {
+   "type": "abstain"
+  },
+  "absent_terms": [
+   "oven"
+  ]
+ },
+ {
+  "id": "q-249",
+  "split": "invalid",
+  "category": "nonexistent_device",
+  "command": "Turn on the attic light.",
+  "expected": {
+   "type": "abstain"
+  },
+  "absent_terms": [
+   "attic"
+  ]
+ },
+ {
+  "id": "q-250",
+  "split": "invalid",
+  "category": "nonexistent_device",
+  "command": "Set the wine cooler to 55 degrees.",
+  "expected": {
+   "type": "abstain"
+  },
+  "absent_terms": [
+   "wine"
+  ]
+ },
+ {
+  "id": "q-251",
+  "split": "invalid",
+  "category": "nonexistent_device",
+  "command": "Turn on the sauna.",
+  "expected": {
+   "type": "abstain"
+  },
+  "absent_terms": [
+   "sauna"
+  ]
+ },
+ {
+  "id": "q-252",
+  "split": "invalid",
+  "category": "nonexistent_device",
+  "command": "Turn on the aquarium light.",
+  "expected": {
+   "type": "abstain"
+  },
+  "absent_terms": [
+   "aquarium"
+  ]
+ },
+ {
+  "id": "q-253",
+  "split": "invalid",
+  "category": "nonexistent_device",
+  "command": "Arm the alarm system.",
+  "expected": {
+   "type": "abstain"
+  },
+  "absent_terms": [
+   "alarm"
+  ]
+ },
+ {
+  "id": "q-254",
+  "split": "invalid",
+  "category": "nonexistent_device",
+  "command": "Start the washing machine.",
+  "expected": {
+   "type": "abstain"
+  },
+  "absent_terms": [
+   "washing machine",
+   "washer"
+  ]
+ },
+ {
+  "id": "q-255",
+  "split": "invalid",
+  "category": "nonexistent_device",
+  "command": "Close the skylight in the master bedroom.",
+  "expected": {
+   "type": "abstain"
+  },
+  "absent_terms": [
+   "skylight"
+  ]
+ },
+ {
+  "id": "q-256",
+  "split": "invalid",
+  "category": "unsupported_action",
+  "command": "Open the garage door halfway.",
+  "expected": {
+   "type": "abstain"
+  }
+ },
+ {
+  "id": "q-257",
+  "split": "invalid",
+  "category": "unsupported_action",
+  "command": "Set the driveway gate to 30% open.",
+  "expected": {
+   "type": "abstain"
+  }
+ },
+ {
+  "id": "q-258",
+  "split": "invalid",
+  "category": "unsupported_action",
+  "command": "Turn the stairway light blue.",
+  "expected": {
+   "type": "abstain"
+  }
+ },
+ {
+  "id": "q-259",
+  "split": "invalid",
+  "category": "unsupported_action",
+  "command": "Dim the bathroom vanity light to 40 percent.",
+  "expected": {
+   "type": "abstain"
+  }
+ },
+ {
+  "id": "q-260",
+  "split": "invalid",
+  "category": "unsupported_action",
+  "command": "Make the kitchen ceiling light red.",
+  "expected": {
+   "type": "abstain"
+  }
+ },
+ {
+  "id": "q-261",
+  "split": "invalid",
+  "category": "unsupported_action",
+  "command": "Change the office desk lamp to green.",
+  "expected": {
+   "type": "abstain"
+  }
+ },
+ {
+  "id": "q-262",
+  "split": "invalid",
+  "category": "unsupported_action",
+  "command": "Turn the master bedroom nightstand lamp pink.",
+  "expected": {
+   "type": "abstain"
+  }
+ },
+ {
+  "id": "q-263",
+  "split": "invalid",
+  "category": "unsupported_action",
+  "command": "Dim the Christmas tree to 50 percent.",
+  "expected": {
+   "type": "abstain"
+  }
+ },
+ {
+  "id": "q-264",
+  "split": "invalid",
+  "category": "unsupported_action",
+  "command": "Record a clip on the backyard camera.",
+  "expected": {
+   "type": "abstain"
+  }
+ },
+ {
+  "id": "q-265",
+  "split": "invalid",
+  "category": "unsupported_action",
+  "command": "Zoom in on the front porch camera.",
+  "expected": {
+   "type": "abstain"
+  }
+ },
+ {
+  "id": "q-266",
+  "split": "invalid",
+  "category": "unsupported_action",
+  "command": "Change the channel on the living room TV to 5.",
+  "expected": {
+   "type": "abstain"
+  }
+ },
+ {
+  "id": "q-267",
+  "split": "invalid",
+  "category": "unsupported_action",
+  "command": "Set the downstairs thermostat humidity to 40 percent.",
+  "expected": {
+   "type": "abstain"
+  }
+ },
+ {
+  "id": "q-268",
+  "split": "invalid",
+  "category": "unsupported_action",
+  "command": "Open the garage door to 75 percent.",
+  "expected": {
+   "type": "abstain"
+  }
+ },
+ {
+  "id": "q-269",
+  "split": "invalid",
+  "category": "unsupported_action",
+  "command": "Rewind the master bedroom TV by 30 seconds.",
+  "expected": {
+   "type": "abstain"
+  }
+ },
+ {
+  "id": "q-270",
+  "split": "invalid",
+  "category": "unsupported_action",
+  "command": "Set the laundry room dehumidifier to 45 percent humidity.",
+  "expected": {
+   "type": "abstain"
+  }
+ },
+ {
+  "id": "q-271",
+  "split": "invalid",
+  "category": "ambiguous_target",
+  "command": "Turn off the bedroom light.",
+  "expected": {
+   "type": "base_response"
+  }
+ },
+ {
+  "id": "q-272",
+  "split": "invalid",
+  "category": "ambiguous_target",
+  "command": "Pause the TV.",
+  "expected": {
+   "type": "base_response"
+  }
+ },
+ {
+  "id": "q-273",
+  "split": "invalid",
+  "category": "ambiguous_target",
+  "command": "Turn on the kitchen light.",
+  "expected": {
+   "type": "base_response"
+  }
+ },
+ {
+  "id": "q-274",
+  "split": "invalid",
+  "category": "ambiguous_target",
+  "command": "Close the blinds.",
+  "expected": {
+   "type": "base_response"
+  }
+ },
+ {
+  "id": "q-275",
+  "split": "invalid",
+  "category": "ambiguous_target",
+  "command": "Set the thermostat to 70.",
+  "expected": {
+   "type": "base_response"
+  }
+ },
+ {
+  "id": "q-276",
+  "split": "invalid",
+  "category": "ambiguous_target",
+  "command": "Lock the door.",
+  "expected": {
+   "type": "base_response"
+  }
+ },
+ {
+  "id": "q-277",
+  "split": "invalid",
+  "category": "ambiguous_target",
+  "command": "Turn the speaker volume down to 20 percent.",
+  "expected": {
+   "type": "base_response"
+  }
+ },
+ {
+  "id": "q-278",
+  "split": "invalid",
+  "category": "ambiguous_target",
+  "command": "Turn on the lamp.",
+  "expected": {
+   "type": "base_response"
+  }
+ },
+ {
+  "id": "q-279",
+  "split": "invalid",
+  "category": "ambiguous_target",
+  "command": "Turn off the living room light.",
+  "expected": {
+   "type": "base_response"
+  }
+ },
+ {
+  "id": "q-280",
+  "split": "invalid",
+  "category": "ambiguous_target",
+  "command": "Open the curtains.",
+  "expected": {
+   "type": "base_response"
+  }
+ },
+ {
+  "id": "q-281",
+  "split": "invalid",
+  "category": "ambiguous_target",
+  "command": "Turn off the camera.",
+  "expected": {
+   "type": "base_response"
+  }
+ },
+ {
+  "id": "q-282",
+  "split": "invalid",
+  "category": "ambiguous_target",
+  "command": "Skip this song.",
+  "expected": {
+   "type": "base_response"
+  }
+ },
+ {
+  "id": "q-283",
+  "split": "invalid",
+  "category": "ambiguous_target",
+  "command": "Mute the music.",
+  "expected": {
+   "type": "base_response"
+  }
+ },
+ {
+  "id": "q-284",
+  "split": "invalid",
+  "category": "ambiguous_target",
+  "command": "Set the master bedroom light to 50 percent.",
+  "expected": {
+   "type": "base_response"
+  }
+ },
+ {
+  "id": "q-285",
+  "split": "invalid",
+  "category": "ambiguous_target",
+  "command": "Turn on the outside light.",
+  "expected": {
+   "type": "base_response"
+  }
+ },
+ {
+  "id": "q-286",
+  "split": "invalid",
+  "category": "unclear_intent",
+  "command": "Make it nicer in here.",
+  "expected": {
+   "type": "base_response"
+  }
+ },
+ {
+  "id": "q-287",
+  "split": "invalid",
+  "category": "unclear_intent",
+  "command": "Do the thing with the lights.",
+  "expected": {
+   "type": "base_response"
+  }
+ },
+ {
+  "id": "q-288",
+  "split": "invalid",
+  "category": "unclear_intent",
+  "command": "Fix the temperature.",
+  "expected": {
+   "type": "base_response"
+  }
+ },
+ {
+  "id": "q-289",
+  "split": "invalid",
+  "category": "unclear_intent",
+  "command": "It's too much.",
+  "expected": {
+   "type": "base_response"
+  }
+ },
+ {
+  "id": "q-290",
+  "split": "invalid",
+  "category": "unclear_intent",
+  "command": "Can you change it?",
+  "expected": {
+   "type": "base_response"
+  }
+ },
+ {
+  "id": "q-291",
+  "split": "invalid",
+  "category": "unclear_intent",
+  "command": "Set it to the usual.",
+  "expected": {
+   "type": "base_response"
+  }
+ },
+ {
+  "id": "q-292",
+  "split": "invalid",
+  "category": "unclear_intent",
+  "command": "Turn it.",
+  "expected": {
+   "type": "base_response"
+  }
+ },
+ {
+  "id": "q-293",
+  "split": "invalid",
+  "category": "unclear_intent",
+  "command": "The blinds.",
+  "expected": {
+   "type": "base_response"
+  }
+ },
+ {
+  "id": "q-294",
+  "split": "invalid",
+  "category": "unclear_intent",
+  "command": "Do something about the noise.",
+  "expected": {
+   "type": "base_response"
+  }
+ },
+ {
+  "id": "q-295",
+  "split": "invalid",
+  "category": "unclear_intent",
+  "command": "Make the house ready.",
+  "expected": {
+   "type": "base_response"
+  }
+ },
+ {
+  "id": "q-296",
+  "split": "invalid",
+  "category": "unclear_intent",
+  "command": "Adjust the bedroom.",
+  "expected": {
+   "type": "base_response"
+  }
+ },
+ {
+  "id": "q-297",
+  "split": "invalid",
+  "category": "unclear_intent",
+  "command": "Handle the doors.",
+  "expected": {
+   "type": "base_response"
+  }
+ },
+ {
+  "id": "q-298",
+  "split": "invalid",
+  "category": "conversation",
+  "command": "Thanks, that's all for now.",
+  "expected": {
+   "type": "base_response"
+  }
+ },
+ {
+  "id": "q-299",
+  "split": "invalid",
+  "category": "conversation",
+  "command": "What kinds of devices can you control?",
+  "expected": {
+   "type": "base_response"
+  }
+ },
+ {
+  "id": "q-300",
+  "split": "invalid",
+  "category": "conversation",
+  "command": "Good night!",
+  "expected": {
+   "type": "base_response"
+  }
+ }
+]

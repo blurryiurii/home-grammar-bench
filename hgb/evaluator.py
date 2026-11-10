@@ -9,19 +9,21 @@ from datetime import datetime
 from pathlib import Path
 
 from hgb.client import LlamaClient
-from hgb.grammar import HVAC_MODES, SERVICES, constraint_for
+from hgb.grammar import HVAC_MODES, SERVICES, constraint_for, supports
 
 ROOT = Path(__file__).resolve().parent.parent
+DATA = ROOT / "data"
+RESULTS = ROOT / "results"
 TIERS = {"gpu": "http://127.0.0.1:8090", "cpu": "http://127.0.0.1:8091"}
 CONSTRAINTS = ["none", "generic", "home"]
 HOMES = [40, 100, 300]
 VALID_SHAPES = [{"service", "entity_id"}, {"service", "entity_id", "data"}, {"abstain"}, {"base_response"}]
 FIELDS = [
-    "model", "tier", "constraint", "home", "id", "split", "category", "expected", "predicted",
-    "correct", "action_correct", "valid", "hallucinated", "invalid_call", "latency_ms", "prompt_tokens",
-    "tokens_per_s", "stop_type", "output",
+    "model", "tier", "constraint", "home", "repeat", "id", "split", "category", "subtype", "expected",
+    "predicted", "branch_correct", "tool_correct", "params_correct", "valid", "hallucinated", "invalid_call",
+    "latency_ms", "prompt_tokens", "output_tokens", "tokens_per_s", "stop_type", "output",
 ]
-RUN_FIELDS = ["model", "tier", "constraint", "home", "started", "load_s", "cold_ms", "total_s", "items", "errors"]
+RUN_FIELDS = ["model", "tier", "constraint", "home", "repeat", "started", "load_s", "cold_ms", "total_s", "items", "errors"]
 
 VALUE_HINTS = {
     "percent": "0-100",
@@ -44,6 +46,14 @@ def models():
     return config.sections()
 
 
+def load_home(size):
+    return json.loads((DATA / "homes" / f"home_{size}.json").read_text())
+
+
+def load_questions(path=DATA / "test_questions.json"):
+    return json.loads(Path(path).read_text())
+
+
 def signature(domain, service, params):
     arguments = ", ".join(f"{name}: {VALUE_HINTS[kind]}" for name, kind in params.items())
     return f"{domain}.{service}({arguments})"
@@ -62,6 +72,8 @@ def device_line(entity):
     line = f"{entity['entity_id']} '{entity['name']}' ({entity['area']})"
     if set(entity["services"]) != set(SERVICES[entity["domain"]]):
         line += " supports only: " + ", ".join(entity["services"])
+    if "features" in entity:
+        line += " parameters: " + (", ".join(entity["features"]) or "none (on/off only)")
     return line
 
 
@@ -105,22 +117,23 @@ def is_valid(text):
 def score(item, prediction, home):
     expected = item["expected"]
     is_call = prediction["type"] == "call"
+    branch = prediction["type"] == expected["type"]
+    tool = params = ""
     if expected["type"] == "call":
-        action_correct = is_call and all(prediction[field] == expected[field] for field in ("service", "entity_id"))
-        correct = action_correct and prediction["data"] == expected.get("data", {})
-    else:
-        action_correct = correct = prediction["type"] == expected["type"]
-    entity_ids = {entity["entity_id"] for entity in home["entities"]}
-    executable = {
-        (entity["entity_id"], f"{entity['domain']}.{service}")
-        for entity in home["entities"]
-        for service in entity["services"]
-    }
+        tool = is_call and all(prediction[field] == expected[field] for field in ("service", "entity_id"))
+        params = tool and prediction["data"] == expected.get("data", {})
+    entities = {entity["entity_id"]: entity for entity in home["entities"]}
+    target = entities.get(prediction.get("entity_id"))
+    domain, _, service = prediction.get("service", "").partition(".")
+    executable = (
+        target is not None and target["domain"] == domain and supports(target, service, prediction.get("data", {}))
+    )
     return {
-        "correct": correct,
-        "action_correct": action_correct,
-        "hallucinated": is_call and prediction["entity_id"] not in entity_ids,
-        "invalid_call": is_call and (prediction["entity_id"], prediction["service"]) not in executable,
+        "branch_correct": branch,
+        "tool_correct": tool,
+        "params_correct": params,
+        "hallucinated": is_call and target is None,
+        "invalid_call": is_call and not executable,
     }
 
 
@@ -136,8 +149,43 @@ def warm_up(client, system, constraint):
     return {"load_s": load_s, "cold_ms": cold_ms}
 
 
+def evaluate(client, system, constraint, item, home):
+    row = {
+        "id": item["id"], "split": item["split"], "category": item["category"],
+        "subtype": item.get("subtype", ""), "expected": item["expected"]["type"],
+    }
+    start = time.perf_counter()
+    try:
+        result = client.complete(client.render(system, item["command"]), constraint)
+    except urllib.error.HTTPError as error:
+        failed = {"branch_correct": False, "tool_correct": "", "params_correct": "", "valid": False,
+                  "hallucinated": False, "invalid_call": False}
+        if item["expected"]["type"] == "call":
+            failed.update(tool_correct=False, params_correct=False)
+        return {**row, "predicted": "error", **failed, "output": error.read().decode()}
+    latency_ms = round((time.perf_counter() - start) * 1000)
+    prediction = predict(result["content"])
+    timings = result["timings"]
+    return {
+        **row,
+        "predicted": prediction["type"],
+        **score(item, prediction, home),
+        "valid": is_valid(result["content"]),
+        "latency_ms": latency_ms,
+        "prompt_tokens": timings["prompt_n"] + timings.get("cache_n", 0),
+        "output_tokens": timings["predicted_n"],
+        "tokens_per_s": round(timings["predicted_per_second"], 1),
+        "stop_type": result["stop_type"],
+        "output": result["content"],
+    }
+
+
+def result_path(model, tier, constraint, home, repeat):
+    return RESULTS / tier / f"{model}_{constraint}_{home}_r{repeat}.csv"
+
+
 def record_run(run):
-    path = ROOT / "results" / "runs.csv"
+    path = RESULTS / run["tier"] / "runs.csv"
     is_new = not path.exists()
     with path.open("a", newline="") as file:
         writer = csv.DictWriter(file, fieldnames=RUN_FIELDS)
@@ -146,39 +194,44 @@ def record_run(run):
         writer.writerow(run)
 
 
-def evaluate(client, system, constraint, item, home):
-    row = {"id": item["id"], "split": item["split"], "category": item["category"], "expected": item["expected"]["type"]}
-    try:
-        result = client.complete(client.render(system, item["command"]), constraint)
-    except urllib.error.HTTPError as error:
-        failed = {"correct": False, "action_correct": False, "valid": False, "hallucinated": False, "invalid_call": False}
-        return {**row, "predicted": "error", **failed, "output": error.read().decode()}
-    prediction = predict(result["content"])
-    return {
-        **row,
-        "predicted": prediction["type"],
-        **score(item, prediction, home),
-        "valid": is_valid(result["content"]),
-        "latency_ms": result["latency_ms"],
-        "prompt_tokens": result["timings"]["prompt_n"] + result["timings"].get("cache_n", 0),
-        "tokens_per_s": round(result["timings"]["predicted_per_second"], 1),
-        "stop_type": result["stop_type"],
-        "output": result["content"],
-    }
+def run(model, tier, constraint, home_size, items, repeat=1):
+    output = result_path(model, tier, constraint, home_size, repeat)
+    if output.exists():
+        return output
+    home = load_home(home_size)
+    client = LlamaClient(TIERS[tier], model)
+    system = system_prompt(home)
+    constraint_body = constraint_for(constraint, home)
+    started = datetime.now().isoformat(timespec="seconds")
+    start = time.perf_counter()
+    timing = warm_up(client, system, constraint_body)
+    settings = {"model": model, "tier": tier, "constraint": constraint, "home": home_size, "repeat": repeat}
+    rows = [{**settings, **evaluate(client, system, constraint_body, item, home)} for item in items]
+    total_s = round(time.perf_counter() - start, 1)
+    output.parent.mkdir(parents=True, exist_ok=True)
+    partial = output.with_suffix(".part")
+    with partial.open("w", newline="") as file:
+        writer = csv.DictWriter(file, fieldnames=FIELDS, restval="")
+        writer.writeheader()
+        writer.writerows(rows)
+    partial.rename(output)
+    errors = sum(row["predicted"] == "error" for row in rows)
+    record_run({**settings, "started": started, **timing, "total_s": total_s, "items": len(rows), "errors": errors})
+    return output
 
 
 def summarize(rows):
-    print(f"{'split':<10}{'n':>4}{'correct':>9}{'action':>8}{'valid':>7}{'calls':>7}{'invalid':>9}{'median_ms':>11}")
-    splits = list(dict.fromkeys(row["split"] for row in rows))
-    for split in splits + ["all"]:
+    print(f"{'split':<10}{'n':>4}{'branch':>8}{'tool':>6}{'params':>8}{'valid':>7}{'invalid':>9}{'median_ms':>11}")
+    for split in list(dict.fromkeys(row["split"] for row in rows)) + ["all"]:
         group = [row for row in rows if split in ("all", row["split"])]
+        calls = [row for row in group if row["expected"] == "call"]
         latencies = [row["latency_ms"] for row in group if row["predicted"] != "error"]
         print(
             f"{split:<10}{len(group):>4}"
-            f"{sum(row['correct'] for row in group):>9}"
-            f"{sum(row['action_correct'] for row in group):>8}"
+            f"{sum(row['branch_correct'] for row in group):>8}"
+            f"{sum(row['tool_correct'] is True for row in calls):>6}"
+            f"{sum(row['params_correct'] is True for row in calls):>8}"
             f"{sum(row['valid'] for row in group):>7}"
-            f"{sum(row['predicted'] == 'call' for row in group):>7}"
             f"{sum(row['invalid_call'] for row in group):>9}"
             f"{statistics.median(latencies) if latencies else '-':>11}"
         )
@@ -190,32 +243,18 @@ def main():
     parser.add_argument("--tier", choices=TIERS, default="gpu")
     parser.add_argument("--constraint", choices=CONSTRAINTS, default="home")
     parser.add_argument("--home", type=int, choices=HOMES, default=40)
-    parser.add_argument("--dataset", type=Path, default=ROOT / "data" / "sample.jsonl")
+    parser.add_argument("--repeat", type=int, default=1)
+    parser.add_argument("--dataset", type=Path, default=DATA / "test_questions.json")
     args = parser.parse_args()
-
-    home = json.loads((ROOT / "data" / "homes" / f"home_{args.home}.json").read_text())
-    items = [json.loads(line) for line in args.dataset.read_text().splitlines() if line.strip()]
-    client = LlamaClient(TIERS[args.tier], args.model)
-    system = system_prompt(home)
-    constraint = constraint_for(args.constraint, home)
-
-    started = datetime.now().isoformat(timespec="seconds")
-    start = time.perf_counter()
-    timing = warm_up(client, system, constraint)
-    run = {"model": args.model, "tier": args.tier, "constraint": args.constraint, "home": args.home}
-    rows = [{**run, **evaluate(client, system, constraint, item, home)} for item in items]
-    total_s = round(time.perf_counter() - start, 1)
-
-    output = ROOT / "results" / f"{args.model}_{args.tier}_{args.constraint}_{args.home}.csv"
-    output.parent.mkdir(exist_ok=True)
-    with output.open("w", newline="") as file:
-        writer = csv.DictWriter(file, fieldnames=FIELDS, restval="")
-        writer.writeheader()
-        writer.writerows(rows)
-    errors = sum(row["predicted"] == "error" for row in rows)
-    record_run({**run, "started": started, **timing, "total_s": total_s, "items": len(rows), "errors": errors})
+    output = run(args.model, args.tier, args.constraint, args.home, load_questions(args.dataset), args.repeat)
+    with output.open() as file:
+        rows = [
+            {**row, **{key: row[key] == "True" if row[key] in ("True", "False") else row[key]
+                       for key in ("branch_correct", "tool_correct", "params_correct", "valid", "invalid_call")},
+             "latency_ms": int(row["latency_ms"] or 0)}
+            for row in csv.DictReader(file)
+        ]
     summarize(rows)
-    print(f"run took {total_s} s (model load {timing['load_s']} s, uncached first request {timing['cold_ms']} ms)")
     print(f"wrote {output.relative_to(ROOT)}")
 
 

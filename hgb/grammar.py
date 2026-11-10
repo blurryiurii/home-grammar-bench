@@ -8,6 +8,7 @@ SERVICES = {
         "turn_off": {},
         "toggle": {},
     },
+    "switch": {"turn_on": {}, "turn_off": {}, "toggle": {}},
     "climate": {
         "set_temperature": {"temperature": "temperature"},
         "set_hvac_mode": {"hvac_mode": "hvac-mode"},
@@ -22,6 +23,8 @@ SERVICES = {
         "media_play": {},
         "media_pause": {},
         "media_stop": {},
+        "media_next_track": {},
+        "media_previous_track": {},
         "volume_set": {"volume_level": "level"},
         "volume_mute": {"is_volume_muted": "boolean"},
     },
@@ -94,6 +97,17 @@ def rule_name(service):
     return service.replace(".", "-").replace("_", "-")
 
 
+def allowed_params(entity, service):
+    params = SERVICES[entity["domain"]][service]
+    if "features" not in entity:
+        return params
+    return {name: kind for name, kind in params.items() if name in entity["features"]}
+
+
+def supports(entity, service, data):
+    return service in entity["services"] and set(data) <= set(allowed_params(entity, service))
+
+
 def data_rule(service, params):
     fields = [f"{literal(json.dumps(name) + ': ')} {value}" for name, value in params.items()]
     separator = f" {COMMA} "
@@ -111,22 +125,21 @@ def home_grammar(home):
     call_rules = {}
     entity_rules = {}
     for domain, services in SERVICES.items():
-        for service, params in services.items():
+        for service in services:
             name = f"{domain}.{service}"
-            entities = [
-                entity["entity_id"]
-                for entity in home["entities"]
-                if entity["domain"] == domain and service in entity["services"]
-            ]
-            if not entities:
-                continue
-            rule = rule_name(name)
-            entity_rules[f"{rule}-entity"] = " | ".join(json_string(entity) for entity in entities)
-            parts = [literal(f'{{"service": "{name}", "entity_id": '), f"{rule}-entity"]
-            if params:
-                parts.append(data_rule(name, params))
-            parts.append(CLOSE)
-            call_rules[rule] = " ".join(parts)
+            groups = {}
+            for entity in home["entities"]:
+                if entity["domain"] == domain and service in entity["services"]:
+                    params = allowed_params(entity, service)
+                    groups.setdefault(tuple(params), (params, []))[1].append(entity["entity_id"])
+            for index, (params, entities) in enumerate(groups.values()):
+                rule = rule_name(name) + (f"-{index}" if len(groups) > 1 else "")
+                entity_rules[f"{rule}-entity"] = " | ".join(json_string(entity) for entity in entities)
+                parts = [literal(f'{{"service": "{name}", "entity_id": '), f"{rule}-entity"]
+                if params:
+                    parts.append(data_rule(name, params))
+                parts.append(CLOSE)
+                call_rules[rule] = " ".join(parts)
 
     rules = {
         "root": "call | abstain | base-response",
