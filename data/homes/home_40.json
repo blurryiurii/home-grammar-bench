@@ -1,6 +1,6 @@
 {
  "home_id": "home_40",
- "seed": 786,
+ "seed": 69,
  "size": 40,
  "entities": [
   {
@@ -12,6 +12,9 @@
     "turn_on",
     "turn_off",
     "toggle"
+   ],
+   "features": [
+    "brightness_pct"
    ]
   },
   {
@@ -23,6 +26,9 @@
     "turn_on",
     "turn_off",
     "toggle"
+   ],
+   "features": [
+    "brightness_pct"
    ]
   },
   {
@@ -34,6 +40,9 @@
     "turn_on",
     "turn_off",
     "toggle"
+   ],
+   "features": [
+    "brightness_pct"
    ]
   },
   {
@@ -45,6 +54,10 @@
     "turn_on",
     "turn_off",
     "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
    ]
   },
   {
@@ -56,6 +69,9 @@
     "turn_on",
     "turn_off",
     "toggle"
+   ],
+   "features": [
+    "brightness_pct"
    ]
   },
   {
@@ -67,6 +83,9 @@
     "turn_on",
     "turn_off",
     "toggle"
+   ],
+   "features": [
+    "brightness_pct"
    ]
   },
   {
@@ -78,6 +97,9 @@
     "turn_on",
     "turn_off",
     "toggle"
+   ],
+   "features": [
+    "brightness_pct"
    ]
   },
   {
@@ -89,6 +111,10 @@
     "turn_on",
     "turn_off",
     "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
    ]
   },
   {
@@ -100,6 +126,9 @@
     "turn_on",
     "turn_off",
     "toggle"
+   ],
+   "features": [
+    "brightness_pct"
    ]
   },
   {
@@ -111,18 +140,8 @@
     "turn_on",
     "turn_off",
     "toggle"
-   ]
-  },
-  {
-   "entity_id": "light.hallway_ceiling",
-   "domain": "light",
-   "name": "Hallway Ceiling Light",
-   "area": "Hallway",
-   "services": [
-    "turn_on",
-    "turn_off",
-    "toggle"
-   ]
+   ],
+   "features": []
   },
   {
    "entity_id": "light.stairway",
@@ -133,29 +152,8 @@
     "turn_on",
     "turn_off",
     "toggle"
-   ]
-  },
-  {
-   "entity_id": "light.laundry_room_ceiling",
-   "domain": "light",
-   "name": "Laundry Room Light",
-   "area": "Laundry Room",
-   "services": [
-    "turn_on",
-    "turn_off",
-    "toggle"
-   ]
-  },
-  {
-   "entity_id": "light.garage_ceiling",
-   "domain": "light",
-   "name": "Garage Ceiling Light",
-   "area": "Garage",
-   "services": [
-    "turn_on",
-    "turn_off",
-    "toggle"
-   ]
+   ],
+   "features": []
   },
   {
    "entity_id": "light.front_porch",
@@ -166,6 +164,10 @@
     "turn_on",
     "turn_off",
     "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
    ]
   },
   {
@@ -177,6 +179,10 @@
     "turn_on",
     "turn_off",
     "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
    ]
   },
   {
@@ -286,6 +292,8 @@
     "media_play",
     "media_pause",
     "media_stop",
+    "media_next_track",
+    "media_previous_track",
     "volume_set",
     "volume_mute"
    ]
@@ -301,6 +309,8 @@
     "media_play",
     "media_pause",
     "media_stop",
+    "media_next_track",
+    "media_previous_track",
     "volume_set",
     "volume_mute"
    ]
@@ -316,6 +326,8 @@
     "media_play",
     "media_pause",
     "media_stop",
+    "media_next_track",
+    "media_previous_track",
     "volume_set",
     "volume_mute"
    ]
@@ -331,6 +343,8 @@
     "media_play",
     "media_pause",
     "media_stop",
+    "media_next_track",
+    "media_previous_track",
     "volume_set",
     "volume_mute"
    ]
@@ -346,6 +360,8 @@
     "media_play",
     "media_pause",
     "media_stop",
+    "media_next_track",
+    "media_previous_track",
     "volume_set",
     "volume_mute"
    ]
@@ -361,6 +377,8 @@
     "media_play",
     "media_pause",
     "media_stop",
+    "media_next_track",
+    "media_previous_track",
     "volume_set",
     "volume_mute"
    ]
@@ -469,6 +487,39 @@
     "open_cover",
     "close_cover",
     "stop_cover"
+   ]
+  },
+  {
+   "entity_id": "switch.living_room_christmas_tree",
+   "domain": "switch",
+   "name": "Living Room Christmas Tree",
+   "area": "Living Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "switch.laundry_room_dehumidifier",
+   "domain": "switch",
+   "name": "Laundry Room Dehumidifier",
+   "area": "Laundry Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "switch.office_printer",
+   "domain": "switch",
+   "name": "Office Printer",
+   "area": "Office",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
    ]
   }
  ]

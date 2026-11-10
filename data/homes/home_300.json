@@ -1,0 +1,3923 @@
+{
+ "home_id": "home_300",
+ "seed": 69,
+ "size": 300,
+ "entities": [
+  {
+   "entity_id": "light.kitchen_ceiling",
+   "domain": "light",
+   "name": "Kitchen Ceiling Light",
+   "area": "Kitchen",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.kitchen_island",
+   "domain": "light",
+   "name": "Kitchen Island Pendants",
+   "area": "Kitchen",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.living_room_ceiling",
+   "domain": "light",
+   "name": "Living Room Ceiling Light",
+   "area": "Living Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.living_room_floor_lamp",
+   "domain": "light",
+   "name": "Living Room Floor Lamp",
+   "area": "Living Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
+   ]
+  },
+  {
+   "entity_id": "light.dining_room_chandelier",
+   "domain": "light",
+   "name": "Dining Room Chandelier",
+   "area": "Dining Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.master_bedroom_ceiling",
+   "domain": "light",
+   "name": "Master Bedroom Ceiling Light",
+   "area": "Master Bedroom",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.master_bedroom_nightstand",
+   "domain": "light",
+   "name": "Master Bedroom Nightstand Lamp",
+   "area": "Master Bedroom",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.kids_bedroom_ceiling",
+   "domain": "light",
+   "name": "Kids Bedroom Ceiling Light",
+   "area": "Kids Bedroom",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
+   ]
+  },
+  {
+   "entity_id": "light.office_desk_lamp",
+   "domain": "light",
+   "name": "Office Desk Lamp",
+   "area": "Office",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.bathroom_vanity",
+   "domain": "light",
+   "name": "Bathroom Vanity Light",
+   "area": "Bathroom",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "light.stairway",
+   "domain": "light",
+   "name": "Stairway Light",
+   "area": "Hallway",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "light.front_porch",
+   "domain": "light",
+   "name": "Front Porch Light",
+   "area": "Front Porch",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
+   ]
+  },
+  {
+   "entity_id": "light.backyard_string_lights",
+   "domain": "light",
+   "name": "Backyard String Lights",
+   "area": "Backyard",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
+   ]
+  },
+  {
+   "entity_id": "climate.downstairs_thermostat",
+   "domain": "climate",
+   "name": "Downstairs Thermostat",
+   "area": "Living Room",
+   "services": [
+    "set_temperature",
+    "set_hvac_mode",
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "climate.upstairs_thermostat",
+   "domain": "climate",
+   "name": "Upstairs Thermostat",
+   "area": "Hallway",
+   "services": [
+    "set_temperature",
+    "set_hvac_mode",
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "climate.office_heater",
+   "domain": "climate",
+   "name": "Office Space Heater",
+   "area": "Office",
+   "services": [
+    "set_temperature",
+    "set_hvac_mode",
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "lock.front_door",
+   "domain": "lock",
+   "name": "Front Door Lock",
+   "area": "Front Porch",
+   "services": [
+    "lock",
+    "unlock"
+   ]
+  },
+  {
+   "entity_id": "lock.back_door",
+   "domain": "lock",
+   "name": "Back Door Lock",
+   "area": "Backyard",
+   "services": [
+    "lock",
+    "unlock"
+   ]
+  },
+  {
+   "entity_id": "lock.garage_entry_door",
+   "domain": "lock",
+   "name": "Garage Entry Door Lock",
+   "area": "Garage",
+   "services": [
+    "lock",
+    "unlock"
+   ]
+  },
+  {
+   "entity_id": "camera.front_porch",
+   "domain": "camera",
+   "name": "Front Porch Camera",
+   "area": "Front Porch",
+   "services": [
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "camera.backyard",
+   "domain": "camera",
+   "name": "Backyard Camera",
+   "area": "Backyard",
+   "services": [
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "camera.garage",
+   "domain": "camera",
+   "name": "Garage Camera",
+   "area": "Garage",
+   "services": [
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "media_player.living_room_tv",
+   "domain": "media_player",
+   "name": "Living Room TV",
+   "area": "Living Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "media_player.master_bedroom_tv",
+   "domain": "media_player",
+   "name": "Master Bedroom TV",
+   "area": "Master Bedroom",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "media_player.kitchen_speaker",
+   "domain": "media_player",
+   "name": "Kitchen Speaker",
+   "area": "Kitchen",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "media_player.office_speaker",
+   "domain": "media_player",
+   "name": "Office Speaker",
+   "area": "Office",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "media_player.kids_bedroom_speaker",
+   "domain": "media_player",
+   "name": "Kids Bedroom Speaker",
+   "area": "Kids Bedroom",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "media_player.backyard_speaker",
+   "domain": "media_player",
+   "name": "Backyard Speaker",
+   "area": "Backyard",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "cover.living_room_blinds",
+   "domain": "cover",
+   "name": "Living Room Blinds",
+   "area": "Living Room",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "cover.kitchen_blinds",
+   "domain": "cover",
+   "name": "Kitchen Blinds",
+   "area": "Kitchen",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "cover.dining_room_blinds",
+   "domain": "cover",
+   "name": "Dining Room Blinds",
+   "area": "Dining Room",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "cover.master_bedroom_curtains",
+   "domain": "cover",
+   "name": "Master Bedroom Curtains",
+   "area": "Master Bedroom",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "cover.kids_bedroom_curtains",
+   "domain": "cover",
+   "name": "Kids Bedroom Curtains",
+   "area": "Kids Bedroom",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "cover.office_blinds",
+   "domain": "cover",
+   "name": "Office Blinds",
+   "area": "Office",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "cover.bathroom_blinds",
+   "domain": "cover",
+   "name": "Bathroom Blinds",
+   "area": "Bathroom",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "cover.garage_door",
+   "domain": "cover",
+   "name": "Garage Door",
+   "area": "Garage",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover"
+   ]
+  },
+  {
+   "entity_id": "cover.driveway_gate",
+   "domain": "cover",
+   "name": "Driveway Gate",
+   "area": "Driveway",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover"
+   ]
+  },
+  {
+   "entity_id": "switch.living_room_christmas_tree",
+   "domain": "switch",
+   "name": "Living Room Christmas Tree",
+   "area": "Living Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "switch.laundry_room_dehumidifier",
+   "domain": "switch",
+   "name": "Laundry Room Dehumidifier",
+   "area": "Laundry Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "switch.office_printer",
+   "domain": "switch",
+   "name": "Office Printer",
+   "area": "Office",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.basement_den_ceiling_light",
+   "domain": "light",
+   "name": "Basement Den Ceiling Light",
+   "area": "Basement Den",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.basement_den_reading_lamp",
+   "domain": "light",
+   "name": "Basement Den Reading Lamp",
+   "area": "Basement Den",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
+   ]
+  },
+  {
+   "entity_id": "media_player.basement_den_tv",
+   "domain": "media_player",
+   "name": "Basement Den TV",
+   "area": "Basement Den",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "media_player.basement_den_soundbar",
+   "domain": "media_player",
+   "name": "Basement Den Soundbar",
+   "area": "Basement Den",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "climate.basement_den_thermostat",
+   "domain": "climate",
+   "name": "Basement Den Thermostat",
+   "area": "Basement Den",
+   "services": [
+    "set_temperature",
+    "set_hvac_mode",
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "switch.basement_den_popcorn_machine",
+   "domain": "switch",
+   "name": "Basement Den Popcorn Machine",
+   "area": "Basement Den",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.guest_suite_ceiling_light",
+   "domain": "light",
+   "name": "Guest Suite Ceiling Light",
+   "area": "Guest Suite",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.guest_suite_bedside_lamp",
+   "domain": "light",
+   "name": "Guest Suite Bedside Lamp",
+   "area": "Guest Suite",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
+   ]
+  },
+  {
+   "entity_id": "cover.guest_suite_curtains",
+   "domain": "cover",
+   "name": "Guest Suite Curtains",
+   "area": "Guest Suite",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "media_player.guest_suite_speaker",
+   "domain": "media_player",
+   "name": "Guest Suite Speaker",
+   "area": "Guest Suite",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "climate.guest_suite_thermostat",
+   "domain": "climate",
+   "name": "Guest Suite Thermostat",
+   "area": "Guest Suite",
+   "services": [
+    "set_temperature",
+    "set_hvac_mode",
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "lock.guest_suite_door_lock",
+   "domain": "lock",
+   "name": "Guest Suite Door Lock",
+   "area": "Guest Suite",
+   "services": [
+    "lock",
+    "unlock"
+   ]
+  },
+  {
+   "entity_id": "light.guest_bath_ceiling_light",
+   "domain": "light",
+   "name": "Guest Bath Ceiling Light",
+   "area": "Guest Bath",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.guest_bath_shower_light",
+   "domain": "light",
+   "name": "Guest Bath Shower Light",
+   "area": "Guest Bath",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "cover.guest_bath_blinds",
+   "domain": "cover",
+   "name": "Guest Bath Blinds",
+   "area": "Guest Bath",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "switch.guest_bath_towel_warmer",
+   "domain": "switch",
+   "name": "Guest Bath Towel Warmer",
+   "area": "Guest Bath",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.sunroom_ceiling_light",
+   "domain": "light",
+   "name": "Sunroom Ceiling Light",
+   "area": "Sunroom",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.sunroom_corner_lamp",
+   "domain": "light",
+   "name": "Sunroom Corner Lamp",
+   "area": "Sunroom",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
+   ]
+  },
+  {
+   "entity_id": "cover.sunroom_shades",
+   "domain": "cover",
+   "name": "Sunroom Shades",
+   "area": "Sunroom",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "climate.sunroom_mini_split",
+   "domain": "climate",
+   "name": "Sunroom Mini Split",
+   "area": "Sunroom",
+   "services": [
+    "set_temperature",
+    "set_hvac_mode",
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "media_player.sunroom_speaker",
+   "domain": "media_player",
+   "name": "Sunroom Speaker",
+   "area": "Sunroom",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "switch.sunroom_grow_light",
+   "domain": "switch",
+   "name": "Sunroom Grow Light",
+   "area": "Sunroom",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.home_gym_ceiling_light",
+   "domain": "light",
+   "name": "Home Gym Ceiling Light",
+   "area": "Home Gym",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.home_gym_accent_strip",
+   "domain": "light",
+   "name": "Home Gym Accent Strip",
+   "area": "Home Gym",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
+   ]
+  },
+  {
+   "entity_id": "media_player.home_gym_tv",
+   "domain": "media_player",
+   "name": "Home Gym TV",
+   "area": "Home Gym",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "climate.home_gym_air_conditioner",
+   "domain": "climate",
+   "name": "Home Gym Air Conditioner",
+   "area": "Home Gym",
+   "services": [
+    "set_temperature",
+    "set_hvac_mode",
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "cover.home_gym_roll_up_door",
+   "domain": "cover",
+   "name": "Home Gym Roll-Up Door",
+   "area": "Home Gym",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover"
+   ]
+  },
+  {
+   "entity_id": "camera.home_gym_camera",
+   "domain": "camera",
+   "name": "Home Gym Camera",
+   "area": "Home Gym",
+   "services": [
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "light.mudroom_ceiling_light",
+   "domain": "light",
+   "name": "Mudroom Ceiling Light",
+   "area": "Mudroom",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "lock.mudroom_side_door_lock",
+   "domain": "lock",
+   "name": "Mudroom Side Door Lock",
+   "area": "Mudroom",
+   "services": [
+    "lock",
+    "unlock"
+   ]
+  },
+  {
+   "entity_id": "cover.mudroom_blinds",
+   "domain": "cover",
+   "name": "Mudroom Blinds",
+   "area": "Mudroom",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "switch.mudroom_boot_warmer",
+   "domain": "switch",
+   "name": "Mudroom Boot Warmer",
+   "area": "Mudroom",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "camera.mudroom_camera",
+   "domain": "camera",
+   "name": "Mudroom Camera",
+   "area": "Mudroom",
+   "services": [
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "light.patio_wall_sconces",
+   "domain": "light",
+   "name": "Patio Wall Sconces",
+   "area": "Patio",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.patio_pergola_lights",
+   "domain": "light",
+   "name": "Patio Pergola Lights",
+   "area": "Patio",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
+   ]
+  },
+  {
+   "entity_id": "media_player.patio_speaker",
+   "domain": "media_player",
+   "name": "Patio Speaker",
+   "area": "Patio",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "camera.patio_camera",
+   "domain": "camera",
+   "name": "Patio Camera",
+   "area": "Patio",
+   "services": [
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "cover.patio_awning",
+   "domain": "cover",
+   "name": "Patio Awning",
+   "area": "Patio",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "switch.patio_patio_heater",
+   "domain": "switch",
+   "name": "Patio Patio Heater",
+   "area": "Patio",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.garden_shed_ceiling_light",
+   "domain": "light",
+   "name": "Garden Shed Ceiling Light",
+   "area": "Garden Shed",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "lock.garden_shed_door_lock",
+   "domain": "lock",
+   "name": "Garden Shed Door Lock",
+   "area": "Garden Shed",
+   "services": [
+    "lock",
+    "unlock"
+   ]
+  },
+  {
+   "entity_id": "cover.garden_shed_roll_up_door",
+   "domain": "cover",
+   "name": "Garden Shed Roll-Up Door",
+   "area": "Garden Shed",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover"
+   ]
+  },
+  {
+   "entity_id": "camera.garden_shed_camera",
+   "domain": "camera",
+   "name": "Garden Shed Camera",
+   "area": "Garden Shed",
+   "services": [
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "switch.garden_shed_battery_charger",
+   "domain": "switch",
+   "name": "Garden Shed Battery Charger",
+   "area": "Garden Shed",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.billiards_room_pool_table_light",
+   "domain": "light",
+   "name": "Billiards Room Pool Table Light",
+   "area": "Billiards Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.billiards_room_ceiling_light",
+   "domain": "light",
+   "name": "Billiards Room Ceiling Light",
+   "area": "Billiards Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "cover.billiards_room_curtains",
+   "domain": "cover",
+   "name": "Billiards Room Curtains",
+   "area": "Billiards Room",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "media_player.billiards_room_speaker",
+   "domain": "media_player",
+   "name": "Billiards Room Speaker",
+   "area": "Billiards Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "switch.billiards_room_neon_sign",
+   "domain": "switch",
+   "name": "Billiards Room Neon Sign",
+   "area": "Billiards Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.library_ceiling_light",
+   "domain": "light",
+   "name": "Library Ceiling Light",
+   "area": "Library",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.library_reading_lamp",
+   "domain": "light",
+   "name": "Library Reading Lamp",
+   "area": "Library",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
+   ]
+  },
+  {
+   "entity_id": "climate.library_thermostat",
+   "domain": "climate",
+   "name": "Library Thermostat",
+   "area": "Library",
+   "services": [
+    "set_temperature",
+    "set_hvac_mode",
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "cover.library_blinds",
+   "domain": "cover",
+   "name": "Library Blinds",
+   "area": "Library",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "media_player.library_speaker",
+   "domain": "media_player",
+   "name": "Library Speaker",
+   "area": "Library",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "media_player.library_turntable",
+   "domain": "media_player",
+   "name": "Library Turntable",
+   "area": "Library",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "light.side_yard_flood_lights",
+   "domain": "light",
+   "name": "Side Yard Flood Lights",
+   "area": "Side Yard",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.side_yard_path_lights",
+   "domain": "light",
+   "name": "Side Yard Path Lights",
+   "area": "Side Yard",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "light.side_yard_lanterns",
+   "domain": "light",
+   "name": "Side Yard Lanterns",
+   "area": "Side Yard",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
+   ]
+  },
+  {
+   "entity_id": "camera.side_yard_camera",
+   "domain": "camera",
+   "name": "Side Yard Camera",
+   "area": "Side Yard",
+   "services": [
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "switch.side_yard_pond_pump",
+   "domain": "switch",
+   "name": "Side Yard Pond Pump",
+   "area": "Side Yard",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.rose_guest_room_ceiling_light",
+   "domain": "light",
+   "name": "Rose Guest Room Ceiling Light",
+   "area": "Rose Guest Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.rose_guest_room_reading_light",
+   "domain": "light",
+   "name": "Rose Guest Room Reading Light",
+   "area": "Rose Guest Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
+   ]
+  },
+  {
+   "entity_id": "cover.rose_guest_room_curtains",
+   "domain": "cover",
+   "name": "Rose Guest Room Curtains",
+   "area": "Rose Guest Room",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "media_player.rose_guest_room_speaker",
+   "domain": "media_player",
+   "name": "Rose Guest Room Speaker",
+   "area": "Rose Guest Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "climate.rose_guest_room_thermostat",
+   "domain": "climate",
+   "name": "Rose Guest Room Thermostat",
+   "area": "Rose Guest Room",
+   "services": [
+    "set_temperature",
+    "set_hvac_mode",
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "switch.rose_guest_room_charging_station",
+   "domain": "switch",
+   "name": "Rose Guest Room Charging Station",
+   "area": "Rose Guest Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.ivy_guest_room_ceiling_light",
+   "domain": "light",
+   "name": "Ivy Guest Room Ceiling Light",
+   "area": "Ivy Guest Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.ivy_guest_room_reading_light",
+   "domain": "light",
+   "name": "Ivy Guest Room Reading Light",
+   "area": "Ivy Guest Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
+   ]
+  },
+  {
+   "entity_id": "cover.ivy_guest_room_curtains",
+   "domain": "cover",
+   "name": "Ivy Guest Room Curtains",
+   "area": "Ivy Guest Room",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "media_player.ivy_guest_room_speaker",
+   "domain": "media_player",
+   "name": "Ivy Guest Room Speaker",
+   "area": "Ivy Guest Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "climate.ivy_guest_room_thermostat",
+   "domain": "climate",
+   "name": "Ivy Guest Room Thermostat",
+   "area": "Ivy Guest Room",
+   "services": [
+    "set_temperature",
+    "set_hvac_mode",
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "switch.ivy_guest_room_electric_blanket",
+   "domain": "switch",
+   "name": "Ivy Guest Room Electric Blanket",
+   "area": "Ivy Guest Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.au_pair_room_ceiling_light",
+   "domain": "light",
+   "name": "Au Pair Room Ceiling Light",
+   "area": "Au Pair Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.au_pair_room_reading_light",
+   "domain": "light",
+   "name": "Au Pair Room Reading Light",
+   "area": "Au Pair Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
+   ]
+  },
+  {
+   "entity_id": "cover.au_pair_room_curtains",
+   "domain": "cover",
+   "name": "Au Pair Room Curtains",
+   "area": "Au Pair Room",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "media_player.au_pair_room_speaker",
+   "domain": "media_player",
+   "name": "Au Pair Room Speaker",
+   "area": "Au Pair Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "climate.au_pair_room_thermostat",
+   "domain": "climate",
+   "name": "Au Pair Room Thermostat",
+   "area": "Au Pair Room",
+   "services": [
+    "set_temperature",
+    "set_hvac_mode",
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "switch.au_pair_room_space_lamp",
+   "domain": "switch",
+   "name": "Au Pair Room Space Lamp",
+   "area": "Au Pair Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.guest_house_bedroom_ceiling_light",
+   "domain": "light",
+   "name": "Guest House Bedroom Ceiling Light",
+   "area": "Guest House Bedroom",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.guest_house_bedroom_reading_light",
+   "domain": "light",
+   "name": "Guest House Bedroom Reading Light",
+   "area": "Guest House Bedroom",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
+   ]
+  },
+  {
+   "entity_id": "cover.guest_house_bedroom_curtains",
+   "domain": "cover",
+   "name": "Guest House Bedroom Curtains",
+   "area": "Guest House Bedroom",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "media_player.guest_house_bedroom_speaker",
+   "domain": "media_player",
+   "name": "Guest House Bedroom Speaker",
+   "area": "Guest House Bedroom",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "climate.guest_house_bedroom_thermostat",
+   "domain": "climate",
+   "name": "Guest House Bedroom Thermostat",
+   "area": "Guest House Bedroom",
+   "services": [
+    "set_temperature",
+    "set_hvac_mode",
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "switch.guest_house_bedroom_charging_station",
+   "domain": "switch",
+   "name": "Guest House Bedroom Charging Station",
+   "area": "Guest House Bedroom",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.loft_bedroom_ceiling_light",
+   "domain": "light",
+   "name": "Loft Bedroom Ceiling Light",
+   "area": "Loft Bedroom",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.loft_bedroom_reading_light",
+   "domain": "light",
+   "name": "Loft Bedroom Reading Light",
+   "area": "Loft Bedroom",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
+   ]
+  },
+  {
+   "entity_id": "cover.loft_bedroom_curtains",
+   "domain": "cover",
+   "name": "Loft Bedroom Curtains",
+   "area": "Loft Bedroom",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "media_player.loft_bedroom_speaker",
+   "domain": "media_player",
+   "name": "Loft Bedroom Speaker",
+   "area": "Loft Bedroom",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "climate.loft_bedroom_thermostat",
+   "domain": "climate",
+   "name": "Loft Bedroom Thermostat",
+   "area": "Loft Bedroom",
+   "services": [
+    "set_temperature",
+    "set_hvac_mode",
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "switch.loft_bedroom_sound_machine",
+   "domain": "switch",
+   "name": "Loft Bedroom Sound Machine",
+   "area": "Loft Bedroom",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.powder_room_ceiling_light",
+   "domain": "light",
+   "name": "Powder Room Ceiling Light",
+   "area": "Powder Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.powder_room_shower_light",
+   "domain": "light",
+   "name": "Powder Room Shower Light",
+   "area": "Powder Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "cover.powder_room_blinds",
+   "domain": "cover",
+   "name": "Powder Room Blinds",
+   "area": "Powder Room",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "switch.powder_room_air_purifier",
+   "domain": "switch",
+   "name": "Powder Room Air Purifier",
+   "area": "Powder Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.guest_house_bath_ceiling_light",
+   "domain": "light",
+   "name": "Guest House Bath Ceiling Light",
+   "area": "Guest House Bath",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.guest_house_bath_shower_light",
+   "domain": "light",
+   "name": "Guest House Bath Shower Light",
+   "area": "Guest House Bath",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "cover.guest_house_bath_blinds",
+   "domain": "cover",
+   "name": "Guest House Bath Blinds",
+   "area": "Guest House Bath",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "switch.guest_house_bath_towel_warmer",
+   "domain": "switch",
+   "name": "Guest House Bath Towel Warmer",
+   "area": "Guest House Bath",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.pool_house_bath_ceiling_light",
+   "domain": "light",
+   "name": "Pool House Bath Ceiling Light",
+   "area": "Pool House Bath",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.pool_house_bath_shower_light",
+   "domain": "light",
+   "name": "Pool House Bath Shower Light",
+   "area": "Pool House Bath",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "cover.pool_house_bath_blinds",
+   "domain": "cover",
+   "name": "Pool House Bath Blinds",
+   "area": "Pool House Bath",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "switch.pool_house_bath_towel_warmer",
+   "domain": "switch",
+   "name": "Pool House Bath Towel Warmer",
+   "area": "Pool House Bath",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.loft_bath_ceiling_light",
+   "domain": "light",
+   "name": "Loft Bath Ceiling Light",
+   "area": "Loft Bath",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.loft_bath_shower_light",
+   "domain": "light",
+   "name": "Loft Bath Shower Light",
+   "area": "Loft Bath",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "cover.loft_bath_blinds",
+   "domain": "cover",
+   "name": "Loft Bath Blinds",
+   "area": "Loft Bath",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "switch.loft_bath_heated_floor",
+   "domain": "switch",
+   "name": "Loft Bath Heated Floor",
+   "area": "Loft Bath",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.media_room_ceiling_light",
+   "domain": "light",
+   "name": "Media Room Ceiling Light",
+   "area": "Media Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.media_room_corner_lamp",
+   "domain": "light",
+   "name": "Media Room Corner Lamp",
+   "area": "Media Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
+   ]
+  },
+  {
+   "entity_id": "light.media_room_wall_sconces",
+   "domain": "light",
+   "name": "Media Room Wall Sconces",
+   "area": "Media Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "media_player.media_room_tv",
+   "domain": "media_player",
+   "name": "Media Room TV",
+   "area": "Media Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "media_player.media_room_soundbar",
+   "domain": "media_player",
+   "name": "Media Room Soundbar",
+   "area": "Media Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "cover.media_room_blinds",
+   "domain": "cover",
+   "name": "Media Room Blinds",
+   "area": "Media Room",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "climate.media_room_thermostat",
+   "domain": "climate",
+   "name": "Media Room Thermostat",
+   "area": "Media Room",
+   "services": [
+    "set_temperature",
+    "set_hvac_mode",
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "light.game_room_ceiling_light",
+   "domain": "light",
+   "name": "Game Room Ceiling Light",
+   "area": "Game Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.game_room_corner_lamp",
+   "domain": "light",
+   "name": "Game Room Corner Lamp",
+   "area": "Game Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
+   ]
+  },
+  {
+   "entity_id": "light.game_room_wall_sconces",
+   "domain": "light",
+   "name": "Game Room Wall Sconces",
+   "area": "Game Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "media_player.game_room_tv",
+   "domain": "media_player",
+   "name": "Game Room TV",
+   "area": "Game Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "media_player.game_room_soundbar",
+   "domain": "media_player",
+   "name": "Game Room Soundbar",
+   "area": "Game Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "cover.game_room_blinds",
+   "domain": "cover",
+   "name": "Game Room Blinds",
+   "area": "Game Room",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "climate.game_room_thermostat",
+   "domain": "climate",
+   "name": "Game Room Thermostat",
+   "area": "Game Room",
+   "services": [
+    "set_temperature",
+    "set_hvac_mode",
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "light.guest_house_lounge_ceiling_light",
+   "domain": "light",
+   "name": "Guest House Lounge Ceiling Light",
+   "area": "Guest House Lounge",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.guest_house_lounge_corner_lamp",
+   "domain": "light",
+   "name": "Guest House Lounge Corner Lamp",
+   "area": "Guest House Lounge",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
+   ]
+  },
+  {
+   "entity_id": "light.guest_house_lounge_wall_sconces",
+   "domain": "light",
+   "name": "Guest House Lounge Wall Sconces",
+   "area": "Guest House Lounge",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "media_player.guest_house_lounge_tv",
+   "domain": "media_player",
+   "name": "Guest House Lounge TV",
+   "area": "Guest House Lounge",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "media_player.guest_house_lounge_soundbar",
+   "domain": "media_player",
+   "name": "Guest House Lounge Soundbar",
+   "area": "Guest House Lounge",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "cover.guest_house_lounge_blinds",
+   "domain": "cover",
+   "name": "Guest House Lounge Blinds",
+   "area": "Guest House Lounge",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "climate.guest_house_lounge_thermostat",
+   "domain": "climate",
+   "name": "Guest House Lounge Thermostat",
+   "area": "Guest House Lounge",
+   "services": [
+    "set_temperature",
+    "set_hvac_mode",
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "light.pool_house_lounge_ceiling_light",
+   "domain": "light",
+   "name": "Pool House Lounge Ceiling Light",
+   "area": "Pool House Lounge",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.pool_house_lounge_corner_lamp",
+   "domain": "light",
+   "name": "Pool House Lounge Corner Lamp",
+   "area": "Pool House Lounge",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
+   ]
+  },
+  {
+   "entity_id": "light.pool_house_lounge_wall_sconces",
+   "domain": "light",
+   "name": "Pool House Lounge Wall Sconces",
+   "area": "Pool House Lounge",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "media_player.pool_house_lounge_tv",
+   "domain": "media_player",
+   "name": "Pool House Lounge TV",
+   "area": "Pool House Lounge",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "media_player.pool_house_lounge_soundbar",
+   "domain": "media_player",
+   "name": "Pool House Lounge Soundbar",
+   "area": "Pool House Lounge",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "cover.pool_house_lounge_blinds",
+   "domain": "cover",
+   "name": "Pool House Lounge Blinds",
+   "area": "Pool House Lounge",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "climate.pool_house_lounge_thermostat",
+   "domain": "climate",
+   "name": "Pool House Lounge Thermostat",
+   "area": "Pool House Lounge",
+   "services": [
+    "set_temperature",
+    "set_hvac_mode",
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "light.wet_bar_ceiling_light",
+   "domain": "light",
+   "name": "Wet Bar Ceiling Light",
+   "area": "Wet Bar",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.wet_bar_corner_lamp",
+   "domain": "light",
+   "name": "Wet Bar Corner Lamp",
+   "area": "Wet Bar",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
+   ]
+  },
+  {
+   "entity_id": "light.wet_bar_wall_sconces",
+   "domain": "light",
+   "name": "Wet Bar Wall Sconces",
+   "area": "Wet Bar",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "media_player.wet_bar_tv",
+   "domain": "media_player",
+   "name": "Wet Bar TV",
+   "area": "Wet Bar",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "media_player.wet_bar_soundbar",
+   "domain": "media_player",
+   "name": "Wet Bar Soundbar",
+   "area": "Wet Bar",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "cover.wet_bar_blinds",
+   "domain": "cover",
+   "name": "Wet Bar Blinds",
+   "area": "Wet Bar",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "climate.wet_bar_thermostat",
+   "domain": "climate",
+   "name": "Wet Bar Thermostat",
+   "area": "Wet Bar",
+   "services": [
+    "set_temperature",
+    "set_hvac_mode",
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "light.music_room_ceiling_light",
+   "domain": "light",
+   "name": "Music Room Ceiling Light",
+   "area": "Music Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.music_room_corner_lamp",
+   "domain": "light",
+   "name": "Music Room Corner Lamp",
+   "area": "Music Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
+   ]
+  },
+  {
+   "entity_id": "light.music_room_wall_sconces",
+   "domain": "light",
+   "name": "Music Room Wall Sconces",
+   "area": "Music Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "media_player.music_room_tv",
+   "domain": "media_player",
+   "name": "Music Room TV",
+   "area": "Music Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "media_player.music_room_soundbar",
+   "domain": "media_player",
+   "name": "Music Room Soundbar",
+   "area": "Music Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "cover.music_room_blinds",
+   "domain": "cover",
+   "name": "Music Room Blinds",
+   "area": "Music Room",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "climate.music_room_thermostat",
+   "domain": "climate",
+   "name": "Music Room Thermostat",
+   "area": "Music Room",
+   "services": [
+    "set_temperature",
+    "set_hvac_mode",
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "light.loft_ceiling_light",
+   "domain": "light",
+   "name": "Loft Ceiling Light",
+   "area": "Loft",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.loft_corner_lamp",
+   "domain": "light",
+   "name": "Loft Corner Lamp",
+   "area": "Loft",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
+   ]
+  },
+  {
+   "entity_id": "light.loft_wall_sconces",
+   "domain": "light",
+   "name": "Loft Wall Sconces",
+   "area": "Loft",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "media_player.loft_tv",
+   "domain": "media_player",
+   "name": "Loft TV",
+   "area": "Loft",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "media_player.loft_soundbar",
+   "domain": "media_player",
+   "name": "Loft Soundbar",
+   "area": "Loft",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "cover.loft_blinds",
+   "domain": "cover",
+   "name": "Loft Blinds",
+   "area": "Loft",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "climate.loft_thermostat",
+   "domain": "climate",
+   "name": "Loft Thermostat",
+   "area": "Loft",
+   "services": [
+    "set_temperature",
+    "set_hvac_mode",
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "light.craft_room_ceiling_light",
+   "domain": "light",
+   "name": "Craft Room Ceiling Light",
+   "area": "Craft Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.craft_room_task_light",
+   "domain": "light",
+   "name": "Craft Room Task Light",
+   "area": "Craft Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "cover.craft_room_blinds",
+   "domain": "cover",
+   "name": "Craft Room Blinds",
+   "area": "Craft Room",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "media_player.craft_room_speaker",
+   "domain": "media_player",
+   "name": "Craft Room Speaker",
+   "area": "Craft Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "switch.craft_room_heat_press",
+   "domain": "switch",
+   "name": "Craft Room Heat Press",
+   "area": "Craft Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.sewing_room_ceiling_light",
+   "domain": "light",
+   "name": "Sewing Room Ceiling Light",
+   "area": "Sewing Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.sewing_room_task_light",
+   "domain": "light",
+   "name": "Sewing Room Task Light",
+   "area": "Sewing Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "cover.sewing_room_blinds",
+   "domain": "cover",
+   "name": "Sewing Room Blinds",
+   "area": "Sewing Room",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "media_player.sewing_room_speaker",
+   "domain": "media_player",
+   "name": "Sewing Room Speaker",
+   "area": "Sewing Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "switch.sewing_room_sewing_machine",
+   "domain": "switch",
+   "name": "Sewing Room Sewing Machine",
+   "area": "Sewing Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.art_studio_ceiling_light",
+   "domain": "light",
+   "name": "Art Studio Ceiling Light",
+   "area": "Art Studio",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.art_studio_task_light",
+   "domain": "light",
+   "name": "Art Studio Task Light",
+   "area": "Art Studio",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "cover.art_studio_blinds",
+   "domain": "cover",
+   "name": "Art Studio Blinds",
+   "area": "Art Studio",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "media_player.art_studio_speaker",
+   "domain": "media_player",
+   "name": "Art Studio Speaker",
+   "area": "Art Studio",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "switch.art_studio_kiln",
+   "domain": "switch",
+   "name": "Art Studio Kiln",
+   "area": "Art Studio",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.workshop_ceiling_light",
+   "domain": "light",
+   "name": "Workshop Ceiling Light",
+   "area": "Workshop",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.workshop_task_light",
+   "domain": "light",
+   "name": "Workshop Task Light",
+   "area": "Workshop",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "cover.workshop_blinds",
+   "domain": "cover",
+   "name": "Workshop Blinds",
+   "area": "Workshop",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "media_player.workshop_speaker",
+   "domain": "media_player",
+   "name": "Workshop Speaker",
+   "area": "Workshop",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "switch.workshop_air_compressor",
+   "domain": "switch",
+   "name": "Workshop Air Compressor",
+   "area": "Workshop",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.observatory_ceiling_light",
+   "domain": "light",
+   "name": "Observatory Ceiling Light",
+   "area": "Observatory",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.observatory_task_light",
+   "domain": "light",
+   "name": "Observatory Task Light",
+   "area": "Observatory",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "cover.observatory_blinds",
+   "domain": "cover",
+   "name": "Observatory Blinds",
+   "area": "Observatory",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover",
+    "set_cover_position"
+   ]
+  },
+  {
+   "entity_id": "media_player.observatory_speaker",
+   "domain": "media_player",
+   "name": "Observatory Speaker",
+   "area": "Observatory",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "switch.observatory_telescope_mount",
+   "domain": "switch",
+   "name": "Observatory Telescope Mount",
+   "area": "Observatory",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.pool_deck_flood_lights",
+   "domain": "light",
+   "name": "Pool Deck Flood Lights",
+   "area": "Pool Deck",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.pool_deck_path_lights",
+   "domain": "light",
+   "name": "Pool Deck Path Lights",
+   "area": "Pool Deck",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "light.pool_deck_lanterns",
+   "domain": "light",
+   "name": "Pool Deck Lanterns",
+   "area": "Pool Deck",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
+   ]
+  },
+  {
+   "entity_id": "camera.pool_deck_camera",
+   "domain": "camera",
+   "name": "Pool Deck Camera",
+   "area": "Pool Deck",
+   "services": [
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "media_player.pool_deck_speaker",
+   "domain": "media_player",
+   "name": "Pool Deck Speaker",
+   "area": "Pool Deck",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "light.orchard_flood_lights",
+   "domain": "light",
+   "name": "Orchard Flood Lights",
+   "area": "Orchard",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.orchard_path_lights",
+   "domain": "light",
+   "name": "Orchard Path Lights",
+   "area": "Orchard",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "light.orchard_lanterns",
+   "domain": "light",
+   "name": "Orchard Lanterns",
+   "area": "Orchard",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
+   ]
+  },
+  {
+   "entity_id": "camera.orchard_camera",
+   "domain": "camera",
+   "name": "Orchard Camera",
+   "area": "Orchard",
+   "services": [
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "media_player.orchard_speaker",
+   "domain": "media_player",
+   "name": "Orchard Speaker",
+   "area": "Orchard",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "light.vegetable_garden_flood_lights",
+   "domain": "light",
+   "name": "Vegetable Garden Flood Lights",
+   "area": "Vegetable Garden",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.vegetable_garden_path_lights",
+   "domain": "light",
+   "name": "Vegetable Garden Path Lights",
+   "area": "Vegetable Garden",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "light.vegetable_garden_lanterns",
+   "domain": "light",
+   "name": "Vegetable Garden Lanterns",
+   "area": "Vegetable Garden",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
+   ]
+  },
+  {
+   "entity_id": "camera.vegetable_garden_camera",
+   "domain": "camera",
+   "name": "Vegetable Garden Camera",
+   "area": "Vegetable Garden",
+   "services": [
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "media_player.vegetable_garden_speaker",
+   "domain": "media_player",
+   "name": "Vegetable Garden Speaker",
+   "area": "Vegetable Garden",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "light.rooftop_terrace_flood_lights",
+   "domain": "light",
+   "name": "Rooftop Terrace Flood Lights",
+   "area": "Rooftop Terrace",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.rooftop_terrace_path_lights",
+   "domain": "light",
+   "name": "Rooftop Terrace Path Lights",
+   "area": "Rooftop Terrace",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "light.rooftop_terrace_lanterns",
+   "domain": "light",
+   "name": "Rooftop Terrace Lanterns",
+   "area": "Rooftop Terrace",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
+   ]
+  },
+  {
+   "entity_id": "camera.rooftop_terrace_camera",
+   "domain": "camera",
+   "name": "Rooftop Terrace Camera",
+   "area": "Rooftop Terrace",
+   "services": [
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "media_player.rooftop_terrace_speaker",
+   "domain": "media_player",
+   "name": "Rooftop Terrace Speaker",
+   "area": "Rooftop Terrace",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "light.gazebo_flood_lights",
+   "domain": "light",
+   "name": "Gazebo Flood Lights",
+   "area": "Gazebo",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.gazebo_path_lights",
+   "domain": "light",
+   "name": "Gazebo Path Lights",
+   "area": "Gazebo",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "light.gazebo_lanterns",
+   "domain": "light",
+   "name": "Gazebo Lanterns",
+   "area": "Gazebo",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
+   ]
+  },
+  {
+   "entity_id": "camera.gazebo_camera",
+   "domain": "camera",
+   "name": "Gazebo Camera",
+   "area": "Gazebo",
+   "services": [
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "media_player.gazebo_speaker",
+   "domain": "media_player",
+   "name": "Gazebo Speaker",
+   "area": "Gazebo",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "light.courtyard_flood_lights",
+   "domain": "light",
+   "name": "Courtyard Flood Lights",
+   "area": "Courtyard",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.courtyard_path_lights",
+   "domain": "light",
+   "name": "Courtyard Path Lights",
+   "area": "Courtyard",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "light.courtyard_lanterns",
+   "domain": "light",
+   "name": "Courtyard Lanterns",
+   "area": "Courtyard",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
+   ]
+  },
+  {
+   "entity_id": "camera.courtyard_camera",
+   "domain": "camera",
+   "name": "Courtyard Camera",
+   "area": "Courtyard",
+   "services": [
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "media_player.courtyard_speaker",
+   "domain": "media_player",
+   "name": "Courtyard Speaker",
+   "area": "Courtyard",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "light.carport_flood_lights",
+   "domain": "light",
+   "name": "Carport Flood Lights",
+   "area": "Carport",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.carport_path_lights",
+   "domain": "light",
+   "name": "Carport Path Lights",
+   "area": "Carport",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "light.carport_lanterns",
+   "domain": "light",
+   "name": "Carport Lanterns",
+   "area": "Carport",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
+   ]
+  },
+  {
+   "entity_id": "camera.carport_camera",
+   "domain": "camera",
+   "name": "Carport Camera",
+   "area": "Carport",
+   "services": [
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "media_player.carport_speaker",
+   "domain": "media_player",
+   "name": "Carport Speaker",
+   "area": "Carport",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "light.tool_shed_ceiling_light",
+   "domain": "light",
+   "name": "Tool Shed Ceiling Light",
+   "area": "Tool Shed",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "lock.tool_shed_door_lock",
+   "domain": "lock",
+   "name": "Tool Shed Door Lock",
+   "area": "Tool Shed",
+   "services": [
+    "lock",
+    "unlock"
+   ]
+  },
+  {
+   "entity_id": "cover.tool_shed_roll_up_door",
+   "domain": "cover",
+   "name": "Tool Shed Roll-Up Door",
+   "area": "Tool Shed",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover"
+   ]
+  },
+  {
+   "entity_id": "camera.tool_shed_camera",
+   "domain": "camera",
+   "name": "Tool Shed Camera",
+   "area": "Tool Shed",
+   "services": [
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "switch.tool_shed_battery_charger",
+   "domain": "switch",
+   "name": "Tool Shed Battery Charger",
+   "area": "Tool Shed",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.equipment_barn_ceiling_light",
+   "domain": "light",
+   "name": "Equipment Barn Ceiling Light",
+   "area": "Equipment Barn",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "lock.equipment_barn_door_lock",
+   "domain": "lock",
+   "name": "Equipment Barn Door Lock",
+   "area": "Equipment Barn",
+   "services": [
+    "lock",
+    "unlock"
+   ]
+  },
+  {
+   "entity_id": "cover.equipment_barn_roll_up_door",
+   "domain": "cover",
+   "name": "Equipment Barn Roll-Up Door",
+   "area": "Equipment Barn",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover"
+   ]
+  },
+  {
+   "entity_id": "camera.equipment_barn_camera",
+   "domain": "camera",
+   "name": "Equipment Barn Camera",
+   "area": "Equipment Barn",
+   "services": [
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "switch.equipment_barn_block_heater",
+   "domain": "switch",
+   "name": "Equipment Barn Block Heater",
+   "area": "Equipment Barn",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.boat_shed_ceiling_light",
+   "domain": "light",
+   "name": "Boat Shed Ceiling Light",
+   "area": "Boat Shed",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "lock.boat_shed_door_lock",
+   "domain": "lock",
+   "name": "Boat Shed Door Lock",
+   "area": "Boat Shed",
+   "services": [
+    "lock",
+    "unlock"
+   ]
+  },
+  {
+   "entity_id": "cover.boat_shed_roll_up_door",
+   "domain": "cover",
+   "name": "Boat Shed Roll-Up Door",
+   "area": "Boat Shed",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover"
+   ]
+  },
+  {
+   "entity_id": "camera.boat_shed_camera",
+   "domain": "camera",
+   "name": "Boat Shed Camera",
+   "area": "Boat Shed",
+   "services": [
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "switch.boat_shed_trickle_charger",
+   "domain": "switch",
+   "name": "Boat Shed Trickle Charger",
+   "area": "Boat Shed",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.greenhouse_ceiling_light",
+   "domain": "light",
+   "name": "Greenhouse Ceiling Light",
+   "area": "Greenhouse",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "lock.greenhouse_door_lock",
+   "domain": "lock",
+   "name": "Greenhouse Door Lock",
+   "area": "Greenhouse",
+   "services": [
+    "lock",
+    "unlock"
+   ]
+  },
+  {
+   "entity_id": "cover.greenhouse_roll_up_door",
+   "domain": "cover",
+   "name": "Greenhouse Roll-Up Door",
+   "area": "Greenhouse",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover"
+   ]
+  },
+  {
+   "entity_id": "camera.greenhouse_camera",
+   "domain": "camera",
+   "name": "Greenhouse Camera",
+   "area": "Greenhouse",
+   "services": [
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "switch.greenhouse_grow_light",
+   "domain": "switch",
+   "name": "Greenhouse Grow Light",
+   "area": "Greenhouse",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.chicken_coop_ceiling_light",
+   "domain": "light",
+   "name": "Chicken Coop Ceiling Light",
+   "area": "Chicken Coop",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "lock.chicken_coop_door_lock",
+   "domain": "lock",
+   "name": "Chicken Coop Door Lock",
+   "area": "Chicken Coop",
+   "services": [
+    "lock",
+    "unlock"
+   ]
+  },
+  {
+   "entity_id": "cover.chicken_coop_roll_up_door",
+   "domain": "cover",
+   "name": "Chicken Coop Roll-Up Door",
+   "area": "Chicken Coop",
+   "services": [
+    "open_cover",
+    "close_cover",
+    "stop_cover"
+   ]
+  },
+  {
+   "entity_id": "camera.chicken_coop_camera",
+   "domain": "camera",
+   "name": "Chicken Coop Camera",
+   "area": "Chicken Coop",
+   "services": [
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "switch.chicken_coop_water_heater",
+   "domain": "switch",
+   "name": "Chicken Coop Water Heater",
+   "area": "Chicken Coop",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "light.pantry_ceiling_light",
+   "domain": "light",
+   "name": "Pantry Ceiling Light",
+   "area": "Pantry",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "switch.pantry_chest_freezer",
+   "domain": "switch",
+   "name": "Pantry Chest Freezer",
+   "area": "Pantry",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "lock.pantry_door_lock",
+   "domain": "lock",
+   "name": "Pantry Door Lock",
+   "area": "Pantry",
+   "services": [
+    "lock",
+    "unlock"
+   ]
+  },
+  {
+   "entity_id": "light.utility_room_ceiling_light",
+   "domain": "light",
+   "name": "Utility Room Ceiling Light",
+   "area": "Utility Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "switch.utility_room_water_softener",
+   "domain": "switch",
+   "name": "Utility Room Water Softener",
+   "area": "Utility Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "lock.utility_room_door_lock",
+   "domain": "lock",
+   "name": "Utility Room Door Lock",
+   "area": "Utility Room",
+   "services": [
+    "lock",
+    "unlock"
+   ]
+  },
+  {
+   "entity_id": "light.network_closet_ceiling_light",
+   "domain": "light",
+   "name": "Network Closet Ceiling Light",
+   "area": "Network Closet",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "switch.network_closet_network_rack",
+   "domain": "switch",
+   "name": "Network Closet Network Rack",
+   "area": "Network Closet",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "lock.network_closet_door_lock",
+   "domain": "lock",
+   "name": "Network Closet Door Lock",
+   "area": "Network Closet",
+   "services": [
+    "lock",
+    "unlock"
+   ]
+  },
+  {
+   "entity_id": "light.storage_room_ceiling_light",
+   "domain": "light",
+   "name": "Storage Room Ceiling Light",
+   "area": "Storage Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "switch.storage_room_heat_lamp",
+   "domain": "switch",
+   "name": "Storage Room Heat Lamp",
+   "area": "Storage Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "lock.storage_room_door_lock",
+   "domain": "lock",
+   "name": "Storage Room Door Lock",
+   "area": "Storage Room",
+   "services": [
+    "lock",
+    "unlock"
+   ]
+  },
+  {
+   "entity_id": "light.rose_garden_flood_lights",
+   "domain": "light",
+   "name": "Rose Garden Flood Lights",
+   "area": "Rose Garden",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct"
+   ]
+  },
+  {
+   "entity_id": "light.rose_garden_path_lights",
+   "domain": "light",
+   "name": "Rose Garden Path Lights",
+   "area": "Rose Garden",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "light.rose_garden_lanterns",
+   "domain": "light",
+   "name": "Rose Garden Lanterns",
+   "area": "Rose Garden",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": [
+    "brightness_pct",
+    "color_name"
+   ]
+  },
+  {
+   "entity_id": "camera.rose_garden_camera",
+   "domain": "camera",
+   "name": "Rose Garden Camera",
+   "area": "Rose Garden",
+   "services": [
+    "turn_on",
+    "turn_off"
+   ]
+  },
+  {
+   "entity_id": "media_player.rose_garden_speaker",
+   "domain": "media_player",
+   "name": "Rose Garden Speaker",
+   "area": "Rose Garden",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "media_play",
+    "media_pause",
+    "media_stop",
+    "media_next_track",
+    "media_previous_track",
+    "volume_set",
+    "volume_mute"
+   ]
+  },
+  {
+   "entity_id": "light.linen_room_ceiling_light",
+   "domain": "light",
+   "name": "Linen Room Ceiling Light",
+   "area": "Linen Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ],
+   "features": []
+  },
+  {
+   "entity_id": "switch.linen_room_steam_press",
+   "domain": "switch",
+   "name": "Linen Room Steam Press",
+   "area": "Linen Room",
+   "services": [
+    "turn_on",
+    "turn_off",
+    "toggle"
+   ]
+  },
+  {
+   "entity_id": "lock.linen_room_door_lock",
+   "domain": "lock",
+   "name": "Linen Room Door Lock",
+   "area": "Linen Room",
+   "services": [
+    "lock",
+    "unlock"
+   ]
+  }
+ ]
+}
